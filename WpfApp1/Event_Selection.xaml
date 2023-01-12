@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp1.Event_Selection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Event_Selection" Height="353" Width="1088" ResizeMode="NoResize" Padding="0,0,0,-4">
+    <Grid>
+        <Button x:Name="st_b" Content="Сталинградская битва" Click="st_b_Click" Height="338" VerticalAlignment="Top" HorizontalAlignment="Left" Width="272" Foreground="White" BorderThickness="1,1,1,1" FontSize="18" Padding="1,250,1,1">
+            <Button.Background>
+                <ImageBrush ImageSource="/st_b.jpg" TileMode="None"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="kr_b" Content="Курская битва" Margin="272,0,0,0" Click="kr_b_Click" Height="338" VerticalAlignment="Top" HorizontalAlignment="Left" Width="272" FontSize="18" Foreground="White" Padding="1,250,1,1" >
+            <Button.Background>
+                <ImageBrush ImageSource="/kr_b.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ms_b" Content="Битва за Москву" Margin="544,0,0,0" Click="ms_b_Click" Height="338" VerticalAlignment="Top" HorizontalAlignment="Left" Width="272" Foreground="White" FontSize="18" Padding="1,250,1,1">
+            <Button.Background>
+                <ImageBrush ImageSource="/ms_b.jpg" Opacity="1.5"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="ob_f" Content="Общие факты" Margin="816,0,0,0" Click="ob_f_Click" Height="338" VerticalAlignment="Top" HorizontalAlignment="Left" Width="272"/>
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="2020-01-20-12-10-59.jpg" />
+    <None Remove="kr_b.png" />
+    <None Remove="ms_b.jpg" />
+    <None Remove="splash.jpg" />
+    <None Remove="st_b.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="2020-01-20-12-10-59.jpg" />
+    <Resource Include="kr_b.png" />
+    <Resource Include="ms_b.jpg" />
+    <Resource Include="st_b.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="splash.jpg" />
+  </ItemGroup>
+
+</Project>
