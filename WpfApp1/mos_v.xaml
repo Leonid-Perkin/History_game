@@ -9,7 +9,7 @@
     <Grid>
 
         <TabControl Margin="0,0,0,41">
-            <TabItem x:Name="Level1" Header="Первая часть">
+            <TabItem x:Name="Level1" Header="Первый уровень">
                 <Grid Background="#FFE5E5E5">
                     <Label Content="1.	Назовите общепринятые даты начала и окончания битвы за Москву." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="402"/>
                     <RadioButton x:Name="P_ot1" Content="30 сентября 1941 – 20 апреля 1942" HorizontalAlignment="Left" Margin="18,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="P_ot1_Checked" Background="White"/>
@@ -30,26 +30,30 @@
                     <Label x:Name="la1" Content="Вы прошли первый уровень !!!!" HorizontalAlignment="Left" Margin="472,54,0,0" VerticalAlignment="Top" Height="45" Width="348" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="Level2" Header="Вторая часть" IsEnabled="False">
+            <TabItem x:Name="Level2" Header="Второй уровень" IsEnabled="False">
                 <Grid Background="#FFE5E5E5">
                     <Label Content="1. Уезжал ли из Москвы на период особой опасности И.В. Сталин?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="402"/>
-                    <RadioButton x:Name="v3_rb1" Content="Да" HorizontalAlignment="Left" Margin="18,36,0,0" VerticalAlignment="Top" GroupName="v3"/>
-                    <RadioButton x:Name="v3_rb2" Content="Нет" HorizontalAlignment="Left" Margin="18,56,0,0" VerticalAlignment="Top" GroupName="v3"/>
+                    <RadioButton x:Name="v3_rb1" Content="Да" HorizontalAlignment="Left" Margin="18,36,0,0" VerticalAlignment="Top" GroupName="v3" Checked="v3_rb1_Checked"/>
+                    <RadioButton x:Name="v3_rb2" Content="Нет" HorizontalAlignment="Left" Margin="18,56,0,0" VerticalAlignment="Top" GroupName="v3" Checked="v3_rb2_Checked"/>
                     <Label Content="2. Когда закончился оборонительный и начался наступательный период этой битвы?" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="v4_rb1" Content="3 - 10 декабря 1944 года" HorizontalAlignment="Left" Margin="18,102,0,0" VerticalAlignment="Top" GroupName="v4"/>
-                    <RadioButton x:Name="v4_rb2" Content="4 - 6 декабря 1941 года" HorizontalAlignment="Left" Margin="18,122,0,0" VerticalAlignment="Top" GroupName="v4"/>
-                    <RadioButton x:Name="v4_rb3" Content="1 - 2 сентября 1941 года" HorizontalAlignment="Left" Margin="18,142,0,0" VerticalAlignment="Top" GroupName="v4"/>
-                    <RadioButton x:Name="v4_rb4" Content="3 - 6 сентября 1941 года" HorizontalAlignment="Left" Margin="18,162,0,0" VerticalAlignment="Top" GroupName="v4"/>
+                    <RadioButton x:Name="v4_rb1" Content="3 - 10 декабря 1944 года" HorizontalAlignment="Left" Margin="18,102,0,0" VerticalAlignment="Top" GroupName="v4" Checked="v4_rb1_Checked"/>
+                    <RadioButton x:Name="v4_rb2" Content="4 - 6 декабря 1941 года" HorizontalAlignment="Left" Margin="18,122,0,0" VerticalAlignment="Top" GroupName="v4" Checked="v4_rb2_Checked"/>
+                    <RadioButton x:Name="v4_rb3" Content="1 - 2 сентября 1941 года" HorizontalAlignment="Left" Margin="18,142,0,0" VerticalAlignment="Top" GroupName="v4" Checked="v4_rb3_Checked"/>
+                    <RadioButton x:Name="v4_rb4" Content="3 - 6 сентября 1941 года" HorizontalAlignment="Left" Margin="18,162,0,0" VerticalAlignment="Top" GroupName="v4" Checked="v4_rb4_Checked"/>
                     <Label Content="3. Когда контрнаступление под Москвой перешло в общее наступление советских войск?" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="v5_rb1" Content="7 – 10 января 1941 года" HorizontalAlignment="Left" Margin="18,208,0,0" VerticalAlignment="Top" GroupName="v5"/>
-                    <RadioButton x:Name="v5_rb2" Content="10 – 20 января 1941 года" HorizontalAlignment="Left" Margin="18,228,0,0" VerticalAlignment="Top" GroupName="v5"/>
-                    <RadioButton x:Name="v5_rb3" Content="7 – 10 января 1943 года" HorizontalAlignment="Left" Margin="18,248,0,0" VerticalAlignment="Top" GroupName="v5"/>
+                    <RadioButton x:Name="v5_rb1" Content="7 – 10 января 1941 года" HorizontalAlignment="Left" Margin="18,208,0,0" VerticalAlignment="Top" GroupName="v5" Checked="v5_rb1_Checked"/>
+                    <RadioButton x:Name="v5_rb2" Content="10 – 20 января 1941 года" HorizontalAlignment="Left" Margin="18,228,0,0" VerticalAlignment="Top" GroupName="v5" Checked="v5_rb2_Checked"/>
+                    <RadioButton x:Name="v5_rb3" Content="7 – 10 января 1943 года" HorizontalAlignment="Left" Margin="18,248,0,0" VerticalAlignment="Top" GroupName="v5" Checked="v5_rb3_Checked"/>
                     <Label Content="4. Кто из фашистских военачальников командовал наступательной операцией?" HorizontalAlignment="Left" Margin="10,268,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="v6_rb1" Content="Федор фон Бок" HorizontalAlignment="Left" Margin="18,294,0,0" VerticalAlignment="Top" GroupName="v6"/>
-                    <RadioButton x:Name="v6_rb2" Content="Герд фон Рундштедт" HorizontalAlignment="Left" Margin="18,314,0,0" VerticalAlignment="Top" GroupName="v6"/>
-                    <RadioButton x:Name="v6_rb3" Content="Гюнтер фон Клюге" HorizontalAlignment="Left" Margin="18,334,0,0" VerticalAlignment="Top" GroupName="v6"/>
-
-
+                    <RadioButton x:Name="v6_rb1" Content="Федор фон Бок" HorizontalAlignment="Left" Margin="18,294,0,0" VerticalAlignment="Top" GroupName="v6" Checked="v6_rb1_Checked"/>
+                    <RadioButton x:Name="v6_rb2" Content="Герд фон Рундштедт" HorizontalAlignment="Left" Margin="18,314,0,0" VerticalAlignment="Top" GroupName="v6" Checked="v6_rb2_Checked"/>
+                    <RadioButton x:Name="v6_rb3" Content="Гюнтер фон Клюге" HorizontalAlignment="Left" Margin="18,334,0,0" VerticalAlignment="Top" GroupName="v6" Checked="v6_rb3_Checked"/>
+                    <Button x:Name="btn_p2" Content="Проверка" HorizontalAlignment="Left" Margin="176,329,0,0" VerticalAlignment="Top" Width="75" Click="btn_p2_Click"/>
+                    <Label x:Name="la2" Content="Вы прошли второй уровень !!!!" HorizontalAlignment="Left" Margin="472,115,0,0" VerticalAlignment="Top" Height="45" Width="348" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Level3" Header="Третий уровень" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
 
                 </Grid>
             </TabItem>
