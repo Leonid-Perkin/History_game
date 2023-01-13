@@ -23,5 +23,10 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void vi_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
