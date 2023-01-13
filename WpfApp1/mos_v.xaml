@@ -16,10 +16,10 @@
                     <RadioButton x:Name="n_ot1" Content="15 сентября 1942 – 13 апреля 1942" HorizontalAlignment="Left" Margin="18,61,0,0" VerticalAlignment="Top" GroupName="v1" Checked="n_ot1_Checked"/>
                     <RadioButton x:Name="n_ot2" Content="3 мая 1942 – 22 апреля 1943" HorizontalAlignment="Left" Margin="18,81,0,0" VerticalAlignment="Top" GroupName="v1" Checked="n_ot2_Checked"/>
                     <Label Content="2. Как гитлеровцы называли операцию по взятию Москвы?" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="n_ot3" Content="Центр" HorizontalAlignment="Left" Margin="18,132,0,0" VerticalAlignment="Top" Checked="n_ot3_Checked"/>
-                    <RadioButton x:Name="P_ot2" Content="Тайфун" HorizontalAlignment="Left" Margin="18,152,0,0" VerticalAlignment="Top" Checked="P_ot2_Checked"/>
-                    <RadioButton x:Name="n_ot4" Content="Блау" HorizontalAlignment="Left" Margin="18,172,0,0" VerticalAlignment="Top" Checked="n_ot4_Checked"/>
-                    <Label Content="2. Войска каких фронтов обороняли Москву?" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="n_ot3" Content="Центр" HorizontalAlignment="Left" Margin="18,132,0,0" VerticalAlignment="Top" Checked="n_ot3_Checked" GroupName="v2"/>
+                    <RadioButton x:Name="P_ot2" Content="Тайфун" HorizontalAlignment="Left" Margin="18,152,0,0" VerticalAlignment="Top" Checked="P_ot2_Checked" GroupName="v2"/>
+                    <RadioButton x:Name="n_ot4" Content="Блау" HorizontalAlignment="Left" Margin="18,172,0,0" VerticalAlignment="Top" Checked="n_ot4_Checked" GroupName="v2"/>
+                    <Label Content="3. Войска каких фронтов обороняли Москву?" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="c_b_p1" Content="Западного" HorizontalAlignment="Left" Margin="18,229,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="c_b_p2" Content="Брянского" HorizontalAlignment="Left" Margin="18,249,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="c_b_p3" Content="Резервного" HorizontalAlignment="Left" Margin="18,269,0,0" VerticalAlignment="Top"/>
@@ -31,7 +31,27 @@
                 </Grid>
             </TabItem>
             <TabItem x:Name="Level2" Header="Вторая часть" IsEnabled="False">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="1. Уезжал ли из Москвы на период особой опасности И.В. Сталин?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="402"/>
+                    <RadioButton x:Name="v3_rb1" Content="Да" HorizontalAlignment="Left" Margin="18,36,0,0" VerticalAlignment="Top" GroupName="v3"/>
+                    <RadioButton x:Name="v3_rb2" Content="Нет" HorizontalAlignment="Left" Margin="18,56,0,0" VerticalAlignment="Top" GroupName="v3"/>
+                    <Label Content="2. Когда закончился оборонительный и начался наступательный период этой битвы?" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v4_rb1" Content="3 - 10 декабря 1944 года" HorizontalAlignment="Left" Margin="18,102,0,0" VerticalAlignment="Top" GroupName="v4"/>
+                    <RadioButton x:Name="v4_rb2" Content="4 - 6 декабря 1941 года" HorizontalAlignment="Left" Margin="18,122,0,0" VerticalAlignment="Top" GroupName="v4"/>
+                    <RadioButton x:Name="v4_rb3" Content="1 - 2 сентября 1941 года" HorizontalAlignment="Left" Margin="18,142,0,0" VerticalAlignment="Top" GroupName="v4"/>
+                    <RadioButton x:Name="v4_rb4" Content="3 - 6 сентября 1941 года" HorizontalAlignment="Left" Margin="18,162,0,0" VerticalAlignment="Top" GroupName="v4"/>
+                    <Label Content="3. Когда контрнаступление под Москвой перешло в общее наступление советских войск?" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v5_rb1" Content="7 – 10 января 1941 года" HorizontalAlignment="Left" Margin="18,208,0,0" VerticalAlignment="Top" GroupName="v5"/>
+                    <RadioButton x:Name="v5_rb2" Content="10 – 20 января 1941 года" HorizontalAlignment="Left" Margin="18,228,0,0" VerticalAlignment="Top" GroupName="v5"/>
+                    <RadioButton x:Name="v5_rb3" Content="7 – 10 января 1943 года" HorizontalAlignment="Left" Margin="18,248,0,0" VerticalAlignment="Top" GroupName="v5"/>
+                    <Label Content="4. Кто из фашистских военачальников командовал наступательной операцией?" HorizontalAlignment="Left" Margin="10,268,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v6_rb1" Content="Федор фон Бок" HorizontalAlignment="Left" Margin="18,294,0,0" VerticalAlignment="Top" GroupName="v6"/>
+                    <RadioButton x:Name="v6_rb2" Content="Герд фон Рундштедт" HorizontalAlignment="Left" Margin="18,314,0,0" VerticalAlignment="Top" GroupName="v6"/>
+                    <RadioButton x:Name="v6_rb3" Content="Гюнтер фон Клюге" HorizontalAlignment="Left" Margin="18,334,0,0" VerticalAlignment="Top" GroupName="v6"/>
+
+
+
+                </Grid>
             </TabItem>
         </TabControl>
         <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom"/>
