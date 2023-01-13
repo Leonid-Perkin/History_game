@@ -9,7 +9,7 @@
     <Grid>
 
         <TabControl Margin="0,0,0,41">
-            <TabItem Header="Первая часть">
+            <TabItem x:Name="Level1" Header="Первая часть">
                 <Grid Background="#FFE5E5E5">
                     <Label Content="1.	Назовите общепринятые даты начала и окончания битвы за Москву." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="402"/>
                     <RadioButton x:Name="P_ot1" Content="30 сентября 1941 – 20 апреля 1942" HorizontalAlignment="Left" Margin="18,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="P_ot1_Checked" Background="White"/>
@@ -27,9 +27,10 @@
                     <CheckBox x:Name="c_b_p5" Content="Юго-Западного" HorizontalAlignment="Left" Margin="18,309,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="c_b_n1" Content="Северного" HorizontalAlignment="Left" Margin="18,329,0,0" VerticalAlignment="Top"/>
                     <Button x:Name="btn_p1" Content="Проверка" HorizontalAlignment="Left" Margin="154,324,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_btn_p1"/>
+                    <Label x:Name="la1" Content="Вы прошли первый уровень !!!!" HorizontalAlignment="Left" Margin="472,54,0,0" VerticalAlignment="Top" Height="45" Width="348" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Вторая часть">
+            <TabItem x:Name="Level2" Header="Вторая часть" IsEnabled="False">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
