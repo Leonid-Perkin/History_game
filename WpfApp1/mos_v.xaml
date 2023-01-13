@@ -5,16 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="mos_v" Height="450" Width="800">
+        Title="mos_v" Height="472" Width="836">
     <Grid>
-        <ProgressBar x:Name="p_b" HorizontalAlignment="Center" Height="18" Margin="0,406,0,0" VerticalAlignment="Top" Width="780"/>
-        <Label Content="1.	Назовите общепринятые даты начала и окончания битвы за Москву." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="402"/>
-        <RadioButton x:Name="P_ot1" Content="30 сентября 1941 – 20 апреля 1942" HorizontalAlignment="Left" Margin="18,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="P_ot1_Checked"/>
-        <RadioButton x:Name="n_ot1" Content="15 сентября 1942 – 13 апреля 1942" HorizontalAlignment="Left" Margin="18,61,0,0" VerticalAlignment="Top" GroupName="v1"/>
-        <RadioButton x:Name="n_ot2" Content="3 мая 1942 – 22 апреля 1943" HorizontalAlignment="Left" Margin="18,81,0,0" VerticalAlignment="Top" GroupName="v1"/>
-        <Label Content="2. Как гитлеровцы называли операцию по взятию Москвы?" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="n_ot3" Content="Центр" HorizontalAlignment="Left" Margin="18,132,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="P_ot2" Content="Тайфун" HorizontalAlignment="Left" Margin="18,152,0,0" VerticalAlignment="Top" Checked="P_ot2_Checked"/>
-        <RadioButton x:Name="n_ot4" Content="Блау" HorizontalAlignment="Left" Margin="18,172,0,0" VerticalAlignment="Top"/>
+
+        <TabControl Margin="0,0,0,41">
+            <TabItem Header="Первая часть">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="1.	Назовите общепринятые даты начала и окончания битвы за Москву." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="402"/>
+                    <RadioButton x:Name="P_ot1" Content="30 сентября 1941 – 20 апреля 1942" HorizontalAlignment="Left" Margin="18,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="P_ot1_Checked" Background="White"/>
+                    <RadioButton x:Name="n_ot1" Content="15 сентября 1942 – 13 апреля 1942" HorizontalAlignment="Left" Margin="18,61,0,0" VerticalAlignment="Top" GroupName="v1" Checked="n_ot1_Checked"/>
+                    <RadioButton x:Name="n_ot2" Content="3 мая 1942 – 22 апреля 1943" HorizontalAlignment="Left" Margin="18,81,0,0" VerticalAlignment="Top" GroupName="v1" Checked="n_ot2_Checked"/>
+                    <Label Content="2. Как гитлеровцы называли операцию по взятию Москвы?" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="n_ot3" Content="Центр" HorizontalAlignment="Left" Margin="18,132,0,0" VerticalAlignment="Top" Checked="n_ot3_Checked"/>
+                    <RadioButton x:Name="P_ot2" Content="Тайфун" HorizontalAlignment="Left" Margin="18,152,0,0" VerticalAlignment="Top" Checked="P_ot2_Checked"/>
+                    <RadioButton x:Name="n_ot4" Content="Блау" HorizontalAlignment="Left" Margin="18,172,0,0" VerticalAlignment="Top" Checked="n_ot4_Checked"/>
+                    <Label Content="2. Войска каких фронтов обороняли Москву?" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="c_b_p1" Content="Западного" HorizontalAlignment="Left" Margin="18,229,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="c_b_p2" Content="Брянского" HorizontalAlignment="Left" Margin="18,249,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="c_b_p3" Content="Резервного" HorizontalAlignment="Left" Margin="18,269,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="c_b_p4" Content="Калининского" HorizontalAlignment="Left" Margin="18,289,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="c_b_p5" Content="Юго-Западного" HorizontalAlignment="Left" Margin="18,309,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="c_b_n1" Content="Северного" HorizontalAlignment="Left" Margin="18,329,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btn_p1" Content="Проверка" HorizontalAlignment="Left" Margin="154,324,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_btn_p1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Вторая часть">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
