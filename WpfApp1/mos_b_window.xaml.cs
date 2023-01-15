@@ -23,5 +23,12 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void vi_btn_Click(object sender, RoutedEventArgs e)
+        {
+            mos_v win2 = new mos_v();
+            win2.Show();
+            Close();
+        }
     }
 }
