@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="mos_b_window" Height="450" Width="800">
     <Grid>
-        
+        <Image Source="/ms_b.jpg" Stretch="Fill"/>
+        <Button x:Name="vi_btn" Content="Викторина" HorizontalAlignment="Left" Margin="44,339,0,0" VerticalAlignment="Top" Height="59" Width="132" Click="vi_btn_Click"/>
+        <Button x:Name="k_btn" Content="Вопросы по карте" HorizontalAlignment="Left" Margin="211,339,0,0" VerticalAlignment="Top" Height="59" Width="132"/>
+
     </Grid>
 </Window>
