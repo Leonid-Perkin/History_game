@@ -7,6 +7,38 @@
         mc:Ignorable="d"
         Title="kr_b_v" Height="450" Width="800">
     <Grid>
-        
+        <TabControl Margin="0,0,0,41">
+            <TabItem x:Name="Level1" Header="Первый уровень">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="1. Курская битва произошла в" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton Content="6 сентября - 3 октября 1940г." HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" GroupName="v1"/>
+                    <RadioButton Content="5 июля-23 августа 1943г" HorizontalAlignment="Left" Margin="23,61,0,0" VerticalAlignment="Top"  GroupName="v1"/>
+                    <RadioButton Content="7 апреля - 5 июля 1941 г" HorizontalAlignment="Left" Margin="23,81,0,0" VerticalAlignment="Top"  GroupName="v1"/>
+                    <RadioButton Content="28 августа- 12 ноября 1942 г." HorizontalAlignment="Left" Margin="23,101,0,0" VerticalAlignment="Top"  GroupName="v1"/>
+                    <Label Content="2. В период Курской битвы произошло крупнейшее танковое сражение:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
+                    <RadioButton Content="битва под Верденом" HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"  GroupName="v2"/>
+                    <RadioButton Content="битва под Прохоровкой" HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"  GroupName="v2"/>
+                    <RadioButton Content="битва под Курском" HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v2"/>
+                    <RadioButton Content="битва у Ипры" HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v2"/>
+                    <Label Content="3. Освобождением какого города закончилась Курская битва?" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+                    <RadioButton Content="Курска" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v3"/>
+                    <RadioButton Content="Харькова" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v3"/>
+                    <RadioButton Content="Белгорода" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v3"/>
+                    <RadioButton Content="Донецка" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v3"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Level2" Header="Второй уровень" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+
+                    <Label x:Name="la2" Content="Вы прошли второй уровень !!!!" HorizontalAlignment="Left" Margin="472,115,0,0" VerticalAlignment="Top" Height="45" Width="348" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Level3" Header="Третий уровень" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
