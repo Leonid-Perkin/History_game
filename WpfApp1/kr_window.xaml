@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="kr_window" Height="450" Width="800">
     <Grid>
-        
+        <Image Source="/kr_b.png" Stretch="Fill"/>
+        <Button x:Name="b1" Content="Викторина" HorizontalAlignment="Left" Margin="56,356,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="b1_Click"/>
+        <Button x:Name="b2" Content="Работа с картой" HorizontalAlignment="Left" Margin="244,356,0,0" VerticalAlignment="Top" Height="42" Width="123" Click="b2_Click"/>
+
     </Grid>
 </Window>
