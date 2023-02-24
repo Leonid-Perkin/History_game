@@ -41,10 +41,11 @@
                     <RadioButton x:Name="v7_l2" Content="Около 5 млн." HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v7_l2_Checked"/>
                     <RadioButton x:Name="v8_l2" Content="Более 2 млн." HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v8_l2_Checked"/>
                     <Label Content="6. Как назывались две советские наступательные операции в ходе Курской битвы?" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="v9_l2" Content="Румянцев и Багратион" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v4"/>
-                    <RadioButton x:Name="v10_l2" Content="Кутузов и Румянцев" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v4"/>
-                    <RadioButton x:Name="v11_l2" Content="Кутузов и Суворов" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v4"/>
-                    <RadioButton x:Name="v12_l2" Content="Суворов и Ушаков" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <RadioButton x:Name="v9_l2" Content="Румянцев и Багратион" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v9_l2_Checked"/>
+                    <RadioButton x:Name="v10_l2" Content="Кутузов и Румянцев" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v10_l2_Checked"/>
+                    <RadioButton x:Name="v11_l2" Content="Кутузов и Суворов" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v11_l2_Checked"/>
+                    <RadioButton x:Name="v12_l2" Content="Суворов и Ушаков" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v12_l2_Checked"/>
+                    <Button x:Name="bt2" Content="Проверка" HorizontalAlignment="Left" Margin="244,311,0,0" VerticalAlignment="Top" Height="27" Width="74" Click="bt2_Click"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="Level3" Header="Третий уровень" IsEnabled="False">

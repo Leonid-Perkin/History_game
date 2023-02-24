@@ -120,6 +120,7 @@ namespace WpfApp1
             if (v == 3)
             {
                 Level2.IsEnabled = true;
+                v = 0;
             }
             else
             {
@@ -139,6 +140,9 @@ namespace WpfApp1
 
         private void v3_l2_Checked(object sender, RoutedEventArgs e)
         {
+            o++;
+            v++;
+            p_b.Value = o;
             v3_l2.Foreground = Brushes.Green;
             v4_l2.IsEnabled = false;
             v1_l2.IsEnabled = false;
@@ -156,6 +160,9 @@ namespace WpfApp1
 
         private void v5_l2_Checked(object sender, RoutedEventArgs e)
         {
+            o++;
+            v++;
+            p_b.Value = o;
             v5_l2.Foreground = Brushes.Green;
             v5_l2.IsEnabled = false;
             v6_l2.IsEnabled = false;
@@ -179,6 +186,49 @@ namespace WpfApp1
         private void v8_l2_Checked(object sender, RoutedEventArgs e)
         {
             v8_l2.Foreground = Brushes.Red;
+        }
+
+        private void v10_l2_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            v++;
+            p_b.Value = o;
+            v10_l2.Foreground = Brushes.Green;
+            v9_l2.Foreground = Brushes.Red;
+            v11_l2.Foreground = Brushes.Red;
+            v12_l2.Foreground = Brushes.Red;
+            v9_l2.IsEnabled = false;
+            v10_l2.IsEnabled = false;
+            v11_l2.IsEnabled = false;
+            v12_l2.IsEnabled = false;
+        }
+
+        private void v9_l2_Checked(object sender, RoutedEventArgs e)
+        {
+            v9_l2.Foreground = Brushes.Red;
+        }
+
+        private void v11_l2_Checked(object sender, RoutedEventArgs e)
+        {
+            v11_l2.Foreground = Brushes.Red;
+        }
+
+        private void v12_l2_Checked(object sender, RoutedEventArgs e)
+        {
+            v12_l2.Foreground = Brushes.Red;
+        }
+
+        private void bt2_Click(object sender, RoutedEventArgs e)
+        {
+            if (v == 3)
+            {
+                Level3.IsEnabled = true;
+                v = 0;
+            }
+            else
+            {
+
+            }
         }
     }
 }
