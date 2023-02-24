@@ -31,15 +31,15 @@
             <TabItem x:Name="Level2" Header="Второй уровень" IsEnabled="False">
                 <Grid Background="#FFE5E5E5">
                     <Label Content="4. Как называлась немецкая наступательная операция в ходе Курской битвы?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="v1_l2" Content="Барбаросса" HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" GroupName="v4"/>
-                    <RadioButton x:Name="v2_l2" Content="Тайфун" HorizontalAlignment="Left" Margin="23,61,0,0" VerticalAlignment="Top"  GroupName="v4"/>
-                    <RadioButton x:Name="v3_l2" Content="Цитадель" HorizontalAlignment="Left" Margin="23,81,0,0" VerticalAlignment="Top"  GroupName="v4"/>
-                    <RadioButton x:Name="v4_l2" Content="Уран" HorizontalAlignment="Left" Margin="23,101,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <RadioButton x:Name="v1_l2" Content="Барбаросса" HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" GroupName="v4" Checked="v1_l2_Checked"/>
+                    <RadioButton x:Name="v2_l2" Content="Тайфун" HorizontalAlignment="Left" Margin="23,61,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v2_l2_Checked"/>
+                    <RadioButton x:Name="v3_l2" Content="Цитадель" HorizontalAlignment="Left" Margin="23,81,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v3_l2_Checked"/>
+                    <RadioButton x:Name="v4_l2" Content="Уран" HorizontalAlignment="Left" Margin="23,101,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v4_l2_Checked"/>
                     <Label Content="5. Сколько человек с обеих сторон было вовлечено в Курскую битву, согласно советской историографии?" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="v5_l2" Content="Более 4 млн." HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"  GroupName="v5"/>
-                    <RadioButton x:Name="v6_l2" Content="Около 3 млн." HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"  GroupName="v5"/>
-                    <RadioButton x:Name="v7_l2" Content="Около 5 млн." HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v5"/>
-                    <RadioButton x:Name="v8_l2" Content="Более 2 млн." HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v5"/>
+                    <RadioButton x:Name="v5_l2" Content="Более 4 млн." HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v5_l2_Checked"/>
+                    <RadioButton x:Name="v6_l2" Content="Около 3 млн." HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v6_l2_Checked"/>
+                    <RadioButton x:Name="v7_l2" Content="Около 5 млн." HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v7_l2_Checked"/>
+                    <RadioButton x:Name="v8_l2" Content="Более 2 млн." HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v8_l2_Checked"/>
                     <Label Content="6. Как назывались две советские наступательные операции в ходе Курской битвы?" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
                     <RadioButton x:Name="v9_l2" Content="Румянцев и Багратион" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v4"/>
                     <RadioButton x:Name="v10_l2" Content="Кутузов и Румянцев" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v4"/>
