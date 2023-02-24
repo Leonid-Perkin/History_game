@@ -50,7 +50,22 @@
             </TabItem>
             <TabItem x:Name="Level3" Header="Третий уровень" IsEnabled="False">
                 <Grid Background="#FFE5E5E5">
-
+                    <Label Content="7. Кто из перечисленных летчиков прославился в ходе Курской битвы и получил звание Героя Советского Союза?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v1_l3" Content="Иван Кожедуб" HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" GroupName="v4"/>
+                    <RadioButton x:Name="v2_l3" Content="Алексей Маресьев" HorizontalAlignment="Left" Margin="23,61,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <RadioButton x:Name="v3_l3" Content="Александр Покрышкин" HorizontalAlignment="Left" Margin="23,81,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <RadioButton x:Name="v4_l3" Content="Арсений Ворожейкин" HorizontalAlignment="Left" Margin="23,101,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <Label Content="8. Непосредственное командование советскими танковыми соединениями во время сражения под Прохоровкой осуществлял:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v5_l3" Content="Генерал армии К.К. Рокоссовский" HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"  GroupName="v5" />
+                    <RadioButton x:Name="v6_l3" Content="Генерал-лейтенант П.А. Ротмистров" HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"  GroupName="v5" />
+                    <RadioButton x:Name="v7_l3" Content="Генерал армии Н.Ф. Ватунин" HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v5"/>
+                    <RadioButton x:Name="v8_l3" Content="генерал-лейтенант И.М. Чистяков." HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v5" />
+                    <Label Content="9. Когда и в честь чего прозвучал первый победный салют в Москве?" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v9_l3" Content="13 июля 1943 г. в честь победы под Прохоровкой" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <RadioButton x:Name="v10_l3" Content="5 августа 1943 г. в честь освобождения Орла и Белгорода" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <RadioButton x:Name="v11_l3" Content="23 августа 1943 г. в честь освобождения Харькова" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <RadioButton x:Name="v12_l3" Content="30 августа 1943 г. в честь победы в Курской битве" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v4"/>
+                    <Button x:Name="bt3" Content="Проверка" HorizontalAlignment="Left" Margin="338,311,0,0" VerticalAlignment="Top" Height="27" Width="74" Click="bt2_Click"/>
                 </Grid>
             </TabItem>
         </TabControl>
