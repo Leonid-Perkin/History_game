@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="kr_b_k" Height="450" Width="800">
+        Title="kr_b_k" Height="549" Width="997">
     <Grid>
-        
+        <Image Source="/319572_original.jpg" Stretch="Fill"/>
     </Grid>
 </Window>
