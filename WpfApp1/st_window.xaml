@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="st_window" Height="450" Width="800">
+        Title="st_window" Height="450" Width="800" Background="White">
     <Grid>
-        <Image Source="/St_b_f.jpg" Stretch="Fill"/>
-
+        <Image Source="/st_b.jpg" Stretch="Fill"/>
+        <Button x:Name="b1" Content="Викторина" HorizontalAlignment="Left" Margin="42,373,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="b1_Click"/>
+        <Button x:Name="b2" Content="Работа с картой" HorizontalAlignment="Left" Margin="173,373,0,0" VerticalAlignment="Top" Height="42" Width="123" Click="b2_Click"/>
     </Grid>
 </Window>
