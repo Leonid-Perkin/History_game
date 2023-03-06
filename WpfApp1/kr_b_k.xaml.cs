@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для mos_b_window.xaml
+    /// Логика взаимодействия для kr_b_k.xaml
     /// </summary>
-    public partial class mos_b_window : Window
+    public partial class kr_b_k : Window
     {
-        public mos_b_window()
+        public kr_b_k()
         {
             InitializeComponent();
-        }
-
-        private void vi_btn_Click(object sender, RoutedEventArgs e)
-        {
-            mos_v win2 = new mos_v();
-            win2.Show();
-            Close();
         }
     }
 }

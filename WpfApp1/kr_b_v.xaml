@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfApp1.kr_b_v"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="kr_b_v" Height="450" Width="800">
+    <Grid>
+        <TabControl Margin="0,0,0,41">
+            <TabItem x:Name="Level1" Header="Первый уровень">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="1. Курская битва произошла в" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v1_l1" Content="6 сентября - 3 октября 1940г." HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="v1_l1_Checked"/>
+                    <RadioButton x:Name="v2_l1" Content="5 июля-23 августа 1943г" HorizontalAlignment="Left" Margin="23,61,0,0" VerticalAlignment="Top"  GroupName="v1" Checked="v2_l1_Checked"/>
+                    <RadioButton x:Name="v3_l1" Content="7 апреля - 5 июля 1941 г" HorizontalAlignment="Left" Margin="23,81,0,0" VerticalAlignment="Top"  GroupName="v1" Checked="v3_l1_Checked"/>
+                    <RadioButton x:Name="v4_l1" Content="28 августа- 12 ноября 1942 г." HorizontalAlignment="Left" Margin="23,101,0,0" VerticalAlignment="Top"  GroupName="v1" Checked="v4_l1_Checked"/>
+                    <Label Content="2. В период Курской битвы произошло крупнейшее танковое сражение:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v5_l1" Content="битва под Верденом" HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"  GroupName="v2" Checked="v5_l1_Checked"/>
+                    <RadioButton x:Name="v6_l1" Content="битва под Прохоровкой" HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"  GroupName="v2" Checked="v6_l1_Checked"/>
+                    <RadioButton x:Name="v7_l1" Content="битва под Курском" HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v2" Checked="v7_l1_Checked"/>
+                    <RadioButton x:Name="v8_l1" Content="битва у Ипры" HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v2" Checked="v8_l1_Checked"/>
+                    <Label Content="3. Освобождением какого города закончилась Курская битва?" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v9_l1" Content="Курска" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v3" Checked="v9_l1_Checked"/>
+                    <RadioButton x:Name="v10_l1" Content="Харькова" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v3" Checked="v10_l1_Checked"/>
+                    <RadioButton x:Name="v11_l1" Content="Белгорода" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v3" Checked="v11_l1_Checked"/>
+                    <RadioButton x:Name="v12_l1" Content="Донецка" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v3" Checked="v12_l1_Checked"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Level2" Header="Второй уровень" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="4. Как называлась немецкая наступательная операция в ходе Курской битвы?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v1_l2" Content="Барбаросса" HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" GroupName="v4" Checked="v1_l2_Checked"/>
+                    <RadioButton x:Name="v2_l2" Content="Тайфун" HorizontalAlignment="Left" Margin="23,61,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v2_l2_Checked"/>
+                    <RadioButton x:Name="v3_l2" Content="Цитадель" HorizontalAlignment="Left" Margin="23,81,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v3_l2_Checked"/>
+                    <RadioButton x:Name="v4_l2" Content="Уран" HorizontalAlignment="Left" Margin="23,101,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v4_l2_Checked"/>
+                    <Label Content="5. Сколько человек с обеих сторон было вовлечено в Курскую битву, согласно советской историографии?" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v5_l2" Content="Более 4 млн." HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v5_l2_Checked"/>
+                    <RadioButton x:Name="v6_l2" Content="Около 3 млн." HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v6_l2_Checked"/>
+                    <RadioButton x:Name="v7_l2" Content="Около 5 млн." HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v7_l2_Checked"/>
+                    <RadioButton x:Name="v8_l2" Content="Более 2 млн." HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v8_l2_Checked"/>
+                    <Label Content="6. Как назывались две советские наступательные операции в ходе Курской битвы?" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v9_l2" Content="Румянцев и Багратион" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v9_l2_Checked"/>
+                    <RadioButton x:Name="v10_l2" Content="Кутузов и Румянцев" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v10_l2_Checked"/>
+                    <RadioButton x:Name="v11_l2" Content="Кутузов и Суворов" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v11_l2_Checked"/>
+                    <RadioButton x:Name="v12_l2" Content="Суворов и Ушаков" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v12_l2_Checked"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Level3" Header="Третий уровень" IsEnabled="False">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="7. Кто из перечисленных летчиков прославился в ходе Курской битвы и получил звание Героя Советского Союза?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v1_l3" Content="Иван Кожедуб" HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" GroupName="v4" Checked="v1_l3_Checked"/>
+                    <RadioButton x:Name="v2_l3" Content="Алексей Маресьев" HorizontalAlignment="Left" Margin="23,61,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v2_l3_Checked"/>
+                    <RadioButton x:Name="v3_l3" Content="Александр Покрышкин" HorizontalAlignment="Left" Margin="23,81,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v3_l3_Checked"/>
+                    <RadioButton x:Name="v4_l3" Content="Арсений Ворожейкин" HorizontalAlignment="Left" Margin="23,101,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v4_l3_Checked"/>
+                    <Label Content="8. Непосредственное командование советскими танковыми соединениями во время сражения под Прохоровкой осуществлял:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v5_l3" Content="Генерал армии К.К. Рокоссовский" HorizontalAlignment="Left" Margin="23,152,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v5_l3_Checked" />
+                    <RadioButton x:Name="v6_l3" Content="Генерал-лейтенант П.А. Ротмистров" HorizontalAlignment="Left" Margin="23,172,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v6_l3_Checked" />
+                    <RadioButton x:Name="v7_l3" Content="Генерал армии Н.Ф. Ватунин" HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v7_l3_Checked"/>
+                    <RadioButton x:Name="v8_l3" Content="генерал-лейтенант И.М. Чистяков." HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v8_l3_Checked" />
+                    <Label Content="9. Когда и в честь чего прозвучал первый победный салют в Москве?" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v9_l3" Content="13 июля 1943 г. в честь победы под Прохоровкой" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v9_l3_Checked"/>
+                    <RadioButton x:Name="v10_l3" Content="5 августа 1943 г. в честь освобождения Орла и Белгорода" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v10_l3_Checked"/>
+                    <RadioButton x:Name="v11_l3" Content="23 августа 1943 г. в честь освобождения Харькова" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v11_l3_Checked"/>
+                    <RadioButton x:Name="v12_l3" Content="30 августа 1943 г. в честь победы в Курской битве" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v12_l3_Checked"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom" Maximum="9"/>
+    </Grid>
+</Window>

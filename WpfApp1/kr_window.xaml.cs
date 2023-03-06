@@ -23,5 +23,19 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void b1_Click(object sender, RoutedEventArgs e)
+        {
+            kr_b_v win2 = new kr_b_v();
+            win2.Show();
+            Close();
+        }
+
+        private void b2_Click(object sender, RoutedEventArgs e)
+        {
+            kr_b_k win2 = new kr_b_k();
+            win2.Show();
+            Close();
+        }
     }
 }
