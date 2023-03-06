@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="st_window" Height="450" Width="800">
     <Grid>
-        
+        <Image Source="/St_b_f.jpg" Stretch="Fill"/>
+
     </Grid>
 </Window>
