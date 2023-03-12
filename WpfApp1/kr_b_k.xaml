@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="kr_b_k" Height="450" Width="800">
+        Title="kr_b_k" Height="549" Width="997">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="445*"/>
+            <ColumnDefinition Width="552*"/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="2,0,0,0" Source="/кб_карта1.jpg" Stretch="Fill"/>
+        <TextBox x:Name="v1" Grid.Column="1" Margin="10,10,0,0" TextWrapping="Wrap" Text="№1 Заполните пропуск в предложении: «Город, обозначенный на схеме цифрой «7», был освобождён от фашистов в тысяча девятьсот ____ году». Ответ запишите в виде слова (словосочетания)." IsReadOnly="True" Height="66" VerticalAlignment="Top" HorizontalAlignment="Left" Width="322"/>
+        <TextBox x:Name="ot1" Grid.Column="1" HorizontalAlignment="Left" Margin="346,10,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="115" Height="66" TextChanged="TextBox_TextChanged"/>
+        <ProgressBar x:Name="p1" Grid.Column="1" Margin="0,0,0,33" Maximum="10" HorizontalAlignment="Center" Width="532" Height="20" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
