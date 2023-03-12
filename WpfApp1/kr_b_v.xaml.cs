@@ -340,5 +340,64 @@ namespace WpfApp1
             v12_l3.Foreground = Brushes.Red;
         }
 
+        private void v1_l4_Checked(object sender, RoutedEventArgs e)
+        {
+            v1_l4.Foreground = Brushes.Red;
+        }
+
+        private void v2_l4_Checked(object sender, RoutedEventArgs e)
+        {
+            v2_l4.Foreground = Brushes.Red;
+        }
+
+        private void v3_l4_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            v++;
+            p_b.Value = o;
+            v1_l4.IsEnabled = false; 
+            v2_l4.IsEnabled = false;
+            v3_l4.IsEnabled = false;
+            v4_l4.IsEnabled = false;
+            v3_l4.Foreground = Brushes.Green;
+            v1_l4.Foreground = Brushes.Red;
+            v2_l4.Foreground = Brushes.Red;
+            v4_l4.Foreground = Brushes.Red;
+        }
+
+        private void v4_l4_Checked(object sender, RoutedEventArgs e)
+        {
+            v4_l4.Foreground = Brushes.Red;
+        }
+
+        private void v5_l4_Checked(object sender, RoutedEventArgs e)
+        {
+            v5_l4.Foreground = Brushes.Red;
+        }
+
+        private void v6_l4_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            v++;
+            p_b.Value = o;
+            v5_l4.IsEnabled = false;
+            v6_l4.IsEnabled = false;
+            v7_l4.IsEnabled = false;
+            v8_l4.IsEnabled = false;
+            v6_l4.Foreground = Brushes.Green;
+            v5_l4 .Foreground = Brushes.Red;
+            v7_l4 .Foreground = Brushes.Red;
+            v8_l4 .Foreground = Brushes.Red;
+        }
+
+        private void v7_l4_Checked(object sender, RoutedEventArgs e)
+        {
+            v7_l4.Foreground = Brushes.Red;
+        }
+
+        private void v8_l4_Checked(object sender, RoutedEventArgs e)
+        {
+            v8_l4.Foreground = Brushes.Red;
+        }
     }
 }

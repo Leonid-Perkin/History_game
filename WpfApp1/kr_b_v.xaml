@@ -68,20 +68,20 @@
             <TabItem x:Name="Level4" Header="Четрёртый уровень" IsEnabled="False" Margin="-2,-2,-2,0">
                 <Grid Background="#FFE5E5E5">
                     <Label Content="10. Прочтите отрывок из воспоминаний и укажите, о каком событии Великой Отечественной войны идёт речь." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="v1_l4" Content="Московской битве" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" GroupName="v1"/>
-                    <RadioButton x:Name="v2_l4" Content="освобождении Белоруссии" HorizontalAlignment="Left" Margin="154,131,0,0" VerticalAlignment="Top" GroupName="v1"/>
-                    <RadioButton x:Name="v3_l4" Content="Курской битве" HorizontalAlignment="Center" Margin="0,131,0,0" VerticalAlignment="Top"  GroupName="v1" />
-                    <RadioButton x:Name="v4_l4" Content="Сталинградской битве" HorizontalAlignment="Left" Margin="478,131,0,0" VerticalAlignment="Top"  GroupName="v1"/>
+                    <RadioButton x:Name="v1_l4" Content="Московской битве" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" GroupName="v1" Checked="v1_l4_Checked"/>
+                    <RadioButton x:Name="v2_l4" Content="освобождении Белоруссии" HorizontalAlignment="Left" Margin="154,131,0,0" VerticalAlignment="Top" GroupName="v1" Checked="v2_l4_Checked"/>
+                    <RadioButton x:Name="v3_l4" Content="Курской битве" HorizontalAlignment="Center" Margin="0,131,0,0" VerticalAlignment="Top"  GroupName="v1" Checked="v3_l4_Checked" />
+                    <RadioButton x:Name="v4_l4" Content="Сталинградской битве" HorizontalAlignment="Left" Margin="478,131,0,0" VerticalAlignment="Top"  GroupName="v1" Checked="v4_l4_Checked"/>
                     <TextBox x:Name="v1" IsReadOnly="True" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" Text="Советской военной разведке удалось своевременно вскрыть подготовку гитлеровской армии к крупному наступлению и даже установить его дату. Советское командование оказалось перед дилеммой: наступать или обороняться? В результате Г. К. Жуков направил Верховному Главнокомандующему обстоятельный доклад с оценкой обстановки, в котором изложил соображения о плане действий... Там, в частности, отмечалось: Переход наших войск в наступление в ближайшие дни с целью упреждения противника считаю нецелесообразным. Лучше будет, если мы измотаем противника на нашей обороне, выбьем ему танки, а затем, введя свежие резервы, переходом в общее наступление окончательно добьём основную группировку противника…»" VerticalAlignment="Top" Width="610" Height="76" ScrollViewer.CanContentScroll="True"/>
                     <Label Content="11. Прочтите отрывок из воспоминаний Маршала Советского Союза Р. Я. Малиновского и укажите битву, о которой идёт речь." HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="v2" IsReadOnly="True" HorizontalAlignment="Left" Margin="10,196,0,0" TextWrapping="Wrap" Text="«Битва по ожесточению и упорству борьбы не имеет себе равных. Развернувшиеся в её ходе потрясающие танковые сражения были непревзойдёнными как по количеству участвовавших в них танков, так и по потерям с обеих сторон. Нужно прямо сказать, что в этой страшной схватке был сломлен становой хребет гитлеровской армии и фашистская Германия, окончательно потеряв надежду на успех, реально увидела перед собой поражение в войне»." VerticalAlignment="Top" Width="610" Height="76" ScrollViewer.CanContentScroll="True"/>
-                    <RadioButton x:Name="v5_l4" Content="Московской битве" HorizontalAlignment="Left" Margin="10,286,0,0" VerticalAlignment="Top" GroupName="v2"/>
-                    <RadioButton x:Name="v6_l4" Content="освобождении Белоруссии" HorizontalAlignment="Left" Margin="154,286,0,0" VerticalAlignment="Top"  GroupName="v2"/>
-                    <RadioButton x:Name="v7_l4" Content="Курской битве" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top"  GroupName="v2"/>
-                    <RadioButton x:Name="v8_l4" Content="Сталинградской битве" HorizontalAlignment="Left" Margin="478,286,0,0" VerticalAlignment="Top"  GroupName="v2"/>
+                    <RadioButton x:Name="v5_l4" Content="Московская" HorizontalAlignment="Left" Margin="10,286,0,0" VerticalAlignment="Top" GroupName="v2" Checked="v5_l4_Checked"/>
+                    <RadioButton x:Name="v6_l4" Content="Курская" HorizontalAlignment="Left" Margin="154,286,0,0" VerticalAlignment="Top"  GroupName="v2" Checked="v6_l4_Checked"/>
+                    <RadioButton x:Name="v7_l4" Content="за Днепр" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top"  GroupName="v2" Checked="v7_l4_Checked"/>
+                    <RadioButton x:Name="v8_l4" Content="за Берлин" HorizontalAlignment="Left" Margin="478,286,0,0" VerticalAlignment="Top"  GroupName="v2" Checked="v8_l4_Checked"/>
                 </Grid>
             </TabItem>
         </TabControl>
-        <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom" Maximum="9"/>
+        <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom" Maximum="11"/>
     </Grid>
 </Window>
