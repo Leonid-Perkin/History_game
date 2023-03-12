@@ -247,6 +247,7 @@ namespace WpfApp1
         private void v3_l3_Checked(object sender, RoutedEventArgs e)
         {
             o++;
+            v++;
             p_b.Value = o;
             v3_l3.Foreground = Brushes.Green;
             v3_l3.IsEnabled = false;
@@ -256,6 +257,11 @@ namespace WpfApp1
             v1_l3.Foreground = Brushes.Red;
             v2_l3.Foreground = Brushes.Red;
             v4_l3.Foreground = Brushes.Red;
+            if (v == 3)
+            {
+                Level4.IsEnabled = true;
+                v = 0;
+            }
 
         }
 
@@ -272,6 +278,7 @@ namespace WpfApp1
         private void v6_l3_Checked(object sender, RoutedEventArgs e)
         {
             o++;
+            v++;
             p_b.Value = o;
             v6_l3.Foreground = Brushes.Green;
             v5_l3.Foreground = Brushes.Red;
@@ -281,6 +288,11 @@ namespace WpfApp1
             v7_l3.IsEnabled = false;
             v8_l3.IsEnabled = false;
             v5_l3.IsEnabled = false;
+            if (v == 3)
+            {
+                Level4.IsEnabled = true;
+                v = 0;
+            }
         }
 
         private void v7_l3_Checked(object sender, RoutedEventArgs e)
@@ -301,6 +313,7 @@ namespace WpfApp1
         private void v10_l3_Checked(object sender, RoutedEventArgs e)
         {
             o++;
+            v++;
             p_b.Value = o;
             v9_l3.Foreground = Brushes.Red;
             v11_l3.Foreground = Brushes.Red;
@@ -310,6 +323,11 @@ namespace WpfApp1
             v11_l3.IsEnabled = false;
             v12_l3.IsEnabled = false;
             v10_l3.IsEnabled = false;
+            if (v == 3)
+            {
+                Level4.IsEnabled = true;
+                v = 0;
+            }
         }
 
         private void v11_l3_Checked(object sender, RoutedEventArgs e)
@@ -321,5 +339,6 @@ namespace WpfApp1
         {
             v12_l3.Foreground = Brushes.Red;
         }
+
     }
 }
