@@ -363,6 +363,12 @@ namespace WpfApp1
             v1_l4.Foreground = Brushes.Red;
             v2_l4.Foreground = Brushes.Red;
             v4_l4.Foreground = Brushes.Red;
+            v10_l3.IsEnabled = false;
+            if (v == 2)
+            {
+                Level5.IsEnabled = true;
+                v = 0;
+            }
         }
 
         private void v4_l4_Checked(object sender, RoutedEventArgs e)
@@ -388,6 +394,11 @@ namespace WpfApp1
             v5_l4 .Foreground = Brushes.Red;
             v7_l4 .Foreground = Brushes.Red;
             v8_l4 .Foreground = Brushes.Red;
+            if (v == 2)
+            {
+                Level5.IsEnabled = true;
+                v = 0;
+            }
         }
 
         private void v7_l4_Checked(object sender, RoutedEventArgs e)
@@ -398,6 +409,95 @@ namespace WpfApp1
         private void v8_l4_Checked(object sender, RoutedEventArgs e)
         {
             v8_l4.Foreground = Brushes.Red;
+        }
+
+        private void v1_l5_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            v++;
+            p_b.Value = o;
+            v1_l5.Foreground = Brushes.Green;
+            v2_l5.Foreground = Brushes.Red;
+            v3_l5.Foreground = Brushes.Red;
+            v4_l5.Foreground = Brushes.Red;
+            v1_l5.IsEnabled = false;
+            v2_l5.IsEnabled = false;
+            v3_l5.IsEnabled = false;
+            v4_l5.IsEnabled = false;
+            if (v == 3)
+            {
+                Level5.IsEnabled = true;
+                v = 0;
+            }
+
+        }
+
+        private void v2_l5_Checked(object sender, RoutedEventArgs e)
+        {
+            v2_l5.Foreground = Brushes.Red;
+        }
+
+        private void v3_l5_Checked(object sender, RoutedEventArgs e)
+        {
+            v3_l5.Foreground = Brushes.Red;
+        }
+
+        private void v4_l5_Checked(object sender, RoutedEventArgs e)
+        {
+            v4_l5.Foreground = Brushes.Red;
+        }
+
+        private void v5_l5_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            v++;
+            p_b.Value = o;
+            v5_l5.Foreground = Brushes.Green;
+            v6_l5.Foreground = Brushes.Red;
+            v7_l5.Foreground = Brushes.Red;
+            v8_l5.Foreground = Brushes.Red;
+            v5_l5.IsEnabled = false;
+            v6_l5.IsEnabled = false;
+            v7_l5.IsEnabled = false;
+            v8_l5.IsEnabled = false;
+            if (v == 3)
+            {
+                Level5.IsEnabled = true;
+                v = 0;
+            }
+        }
+
+        private void v6_l5_Checked(object sender, RoutedEventArgs e)
+        {
+            v6_l5.Foreground = Brushes.Red;
+        }
+
+        private void v7_l5_Checked(object sender, RoutedEventArgs e)
+        {
+            v7_l5.Foreground = Brushes.Red;
+        }
+
+        private void v8_l5_Checked(object sender, RoutedEventArgs e)
+        {
+            v8_l5.Foreground = Brushes.Red;
+        }
+
+        private void tb1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (tb1.Text== "23 августа")
+            {
+                tb1.Background = Brushes.Green;
+                tb1.Foreground = Brushes.White;
+                o++;
+                v++;
+                p_b.Value = o;
+                if (v == 3)
+                {
+                    Level5.IsEnabled = true;
+                    v = 0;
+                }
+
+            }
         }
     }
 }

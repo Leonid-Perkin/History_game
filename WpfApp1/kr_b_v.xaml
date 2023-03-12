@@ -81,6 +81,22 @@
                     <RadioButton x:Name="v8_l4" Content="за Берлин" HorizontalAlignment="Left" Margin="478,286,0,0" VerticalAlignment="Top"  GroupName="v2" Checked="v8_l4_Checked"/>
                 </Grid>
             </TabItem>
+            <TabItem x:Name="Level5" Header="Пятый уровень" IsEnabled="False" Margin="-2,-2,-2,0">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="12. Какое название получило советское реактивное орудие залпового огня времён Великой Отечественной войны?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v1_l5" Content="Катюша" HorizontalAlignment="Left" Margin="23,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="v1_l5_Checked"/>
+                    <RadioButton x:Name="v2_l5" Content="Любаша" HorizontalAlignment="Left" Margin="100,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="v2_l5_Checked"/>
+                    <RadioButton x:Name="v3_l5" Content="Надюша" HorizontalAlignment="Left" Margin="183,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="v3_l5_Checked"/>
+                    <RadioButton x:Name="v4_l5" Content="Аннушка" HorizontalAlignment="Left" Margin="269,41,0,0" VerticalAlignment="Top" GroupName="v1" Checked="v4_l5_Checked"/>
+                    <Label Content="13. Прочтите отрывок из воспоминаний Маршала Советского Союза Р. Я. Малиновского и укажите битву, о которой идёт речь." HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="v5_l5" Content="Кошкин" HorizontalAlignment="Left" Margin="23,95,0,0" VerticalAlignment="Top" GroupName="v2" Checked="v5_l5_Checked"/>
+                    <RadioButton x:Name="v6_l5" Content="Калашников" HorizontalAlignment="Left" Margin="100,95,0,0" VerticalAlignment="Top" GroupName="v2" Checked="v6_l5_Checked"/>
+                    <RadioButton x:Name="v7_l5" Content="Ильюшин" HorizontalAlignment="Left" Margin="204,95,0,0" VerticalAlignment="Top" GroupName="v2" Checked="v7_l5_Checked"/>
+                    <RadioButton x:Name="v8_l5" Content="Токарев" HorizontalAlignment="Left" Margin="289,95,0,0" VerticalAlignment="Top" GroupName="v2" Checked="v8_l5_Checked"/>
+                    <Label Content="14. Когда мы отмечаем день разгрома советскими войсками немецко-фашистских войск в Курской битве?" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tb1" HorizontalAlignment="Left" Margin="23,146,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" TextChanged="tb1_TextChanged"/>
+                </Grid>
+            </TabItem>
         </TabControl>
         <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom" Maximum="11"/>
     </Grid>
