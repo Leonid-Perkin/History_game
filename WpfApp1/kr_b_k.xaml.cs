@@ -23,5 +23,14 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+        int p = 0;
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (ot1.Text== "сорок четвертом")
+            {
+                p++;
+                p1.Value = p;
+            }
+        }
     }
 }

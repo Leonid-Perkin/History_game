@@ -14,6 +14,7 @@
     <None Remove="ms_b.jpg" />
     <None Remove="splash.jpg" />
     <None Remove="st_b.jpg" />
+    <None Remove="кб_карта1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +23,7 @@
     <Resource Include="kr_b.png" />
     <Resource Include="ms_b.jpg" />
     <Resource Include="st_b.jpg" />
+    <Resource Include="кб_карта1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
