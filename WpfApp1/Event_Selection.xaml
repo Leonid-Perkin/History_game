@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Event_Selection" Height="353" Width="817" ResizeMode="NoResize" Padding="0,0,0,-4">
     <Grid>
-        <Button x:Name="st_b" Content="Сталинградская битва" Click="st_b_Click" Height="338" VerticalAlignment="Top" HorizontalAlignment="Left" Width="272" Foreground="White" BorderThickness="1,1,1,1" FontSize="18" Padding="1,250,1,1">
+        <Button  x:Name="st_b" Content="Сталинградская битва" Click="st_b_Click" Height="338" VerticalAlignment="Top" HorizontalAlignment="Left" Width="272" Foreground="White" BorderThickness="1,1,1,1" FontSize="18" Padding="1,250,1,1">
             <Button.Background>
                 <ImageBrush ImageSource="/st_b.jpg" TileMode="None"/>
             </Button.Background>

@@ -32,5 +32,24 @@ namespace WpfApp1
                 p1.Value = p;
             }
         }
+
+        private void ot2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            if (ot2.Text == "Кольцо")
+            {
+                p++;
+                p1.Value = p;
+            }
+        }
+
+        private void ot3_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (ot3.Text == "5")
+            {
+                p++;
+                p1.Value = p;
+            }
+        }
     }
 }
