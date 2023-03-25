@@ -216,5 +216,19 @@ namespace WpfApp1
                 p2 = false;
             }
         }
+
+        private void re_Click(object sender, RoutedEventArgs e)
+        {
+            mos_b_window win2 = new mos_b_window();
+            win2.Show();
+            Close();
+        }
+
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+            Event_Selection win2 = new Event_Selection();
+            win2.Show();
+            Close();
+        }
     }
 }

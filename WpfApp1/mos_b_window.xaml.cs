@@ -30,5 +30,12 @@ namespace WpfApp1
             win2.Show();
             Close();
         }
+
+        private void k_btn2_Click(object sender, RoutedEventArgs e)
+        {
+            Event_Selection win2 = new Event_Selection();
+            win2.Show();
+            Close();
+        }
     }
 }

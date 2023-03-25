@@ -499,5 +499,19 @@ namespace WpfApp1
 
             }
         }
+
+        private void re_Click(object sender, RoutedEventArgs e)
+        {
+            kr_window win2 = new kr_window();
+            win2.Show();
+            Close();
+        }
+
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+            Event_Selection win2 = new Event_Selection();
+            win2.Show();
+            Close();
+        }
     }
 }

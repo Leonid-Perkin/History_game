@@ -44,12 +44,5 @@ namespace WpfApp1
             win2.Show();
             Close();
         }
-
-        private void ob_f_Click(object sender, RoutedEventArgs e)
-        {
-            ob_window win2 = new ob_window();
-            win2.Show();
-            Close();
-        }
     }
 }

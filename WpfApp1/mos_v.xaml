@@ -6,6 +6,63 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="mos_v" Height="472" Width="836">
+    <Window.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="ButtonStyle1" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.MouseOver.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Pressed.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Pressed.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
 
         <TabControl Margin="0,0,0,41">
@@ -26,7 +83,7 @@
                     <CheckBox x:Name="c_b_p4" Content="Калининского" HorizontalAlignment="Left" Margin="18,289,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="c_b_p5" Content="Юго-Западного" HorizontalAlignment="Left" Margin="18,309,0,0" VerticalAlignment="Top"/>
                     <CheckBox x:Name="c_b_n1" Content="Северного" HorizontalAlignment="Left" Margin="18,329,0,0" VerticalAlignment="Top"/>
-                    <Button x:Name="btn_p1" Content="Проверка" HorizontalAlignment="Left" Margin="154,324,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_btn_p1"/>
+                    <Button Style="{DynamicResource ButtonStyle1}" x:Name="btn_p1" Content="Проверка" HorizontalAlignment="Left" Margin="154,324,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_btn_p1" Height="31" Background="#FFCACACA"/>
                     <Label x:Name="la1" Content="Вы прошли первый уровень !!!!" HorizontalAlignment="Left" Margin="472,54,0,0" VerticalAlignment="Top" Height="45" Width="348" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
                 </Grid>
             </TabItem>
@@ -55,6 +112,12 @@
             <TabItem x:Name="Level3" Header="Третий уровень" IsEnabled="False">
                 <Grid Background="#FFE5E5E5">
 
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="set" Header="Настройки">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="re" Content="Назад" HorizontalAlignment="Left" Margin="18,18,0,0" VerticalAlignment="Top" Height="33" Width="78" Background="White" Click="re_Click" Style="{DynamicResource ButtonStyle1}"/>
+                    <Button x:Name="home" Content="выбор события" HorizontalAlignment="Left" Margin="129,18,0,0" VerticalAlignment="Top" Height="33" Width="101" Background="White" Click="home_Click" Style="{DynamicResource ButtonStyle1}"/>
                 </Grid>
             </TabItem>
         </TabControl>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="kr_window" Height="450" Width="800">
+        Title="Курская битва" Height="450" Width="800" Icon="/kr_b.png">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -66,7 +66,8 @@
     <Grid>
         <Image Source="/kr_b.png" Stretch="Fill"/>
         <Button Style="{DynamicResource ButtonStyle1}" x:Name="b1" Content="Викторина" HorizontalAlignment="Left" Margin="56,356,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="b1_Click"/>
-        <Button x:Name="b2" Content="Работа с картой" HorizontalAlignment="Left" Margin="244,356,0,0" VerticalAlignment="Top" Height="42" Width="123" Click="b2_Click" Style="{DynamicResource ButtonStyle1}"/>
+        <Button x:Name="b2" Content="Работа с картой" HorizontalAlignment="Left" Margin="218,356,0,0" VerticalAlignment="Top" Height="42" Width="123" Click="b2_Click" Style="{DynamicResource ButtonStyle1}"/>
+        <Button x:Name="b3" Content="Назад" HorizontalAlignment="Left" Margin="400,356,0,0" VerticalAlignment="Top" Height="42" Width="123" Style="{DynamicResource ButtonStyle1}" Click="b3_Click"/>
 
     </Grid>
 </Window>
