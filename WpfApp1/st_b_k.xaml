@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="st_b_k" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="23*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="0,0,432,0" Source="/st_b_k_img.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="10,19,0,0" TextWrapping="Wrap" Text="Укажите название города, обозначенного на схеме цифрой «1»" IsReadOnly="True" VerticalAlignment="Top" Width="217" Height="40"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="284,21,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" Height="38"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="10,75,0,0" TextWrapping="Wrap" Text="Укажите  название города, обозначенного на схеме цифрой «2», в районе которого произошло соединение войск двух фронтов Красной армии" IsReadOnly="True" VerticalAlignment="Top" Width="217" Height="40"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="284,77,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" Height="38"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="10,134,0,0" TextWrapping="Wrap" Text="Укажите название периода в ходе войны, начало которому положили события, обозначенные на схеме." IsReadOnly="True" VerticalAlignment="Top" Width="217" Height="40"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="284,136,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" Height="38"/>
+
     </Grid>
 </Window>
