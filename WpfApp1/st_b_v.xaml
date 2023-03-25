@@ -5,8 +5,88 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="st_b_v" Height="450" Width="800">
+        Title="st_b_v" Height="458" Width="808">
+    <Window.Resources>
+        <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
+        <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
+        <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
+        <Style x:Key="TextBoxStyle1" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="KeyboardNavigation.TabNavigation" Value="None"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="AllowDrop" Value="true"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="True">
+                            <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.MouseOver.Border}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource TextBox.Focus.Border}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsInactiveSelectionHighlightEnabled" Value="true"/>
+                        <Condition Property="IsSelectionActive" Value="false"/>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="SelectionBrush" Value="{DynamicResource {x:Static SystemColors.InactiveSelectionHighlightBrushKey}}"/>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
-        
+        <TabControl>
+            <TabItem Header="Первый уровень">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-2,26" Height="393">
+                    <Label Content="№1 В каком городе можно посетить Мамаев курган, на котором расположен памятник-ансамбль «Героям Сталинградской битвы»?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="ot1" HorizontalAlignment="Left" Margin="15,41,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="№2 Здание музея-панорамы какой битвы возведено на месте исторической высадки 13-й стрелковой дивизии генерала Родимцева?" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ot2" HorizontalAlignment="Left" Margin="15,95,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" Style="{DynamicResource TextBoxStyle1}"/>
+                    <Label Content="№3 Назовите советский город, в честь которого названа площадь в Париже, в память о великой победе над фашизмом?" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ot3" HorizontalAlignment="Left" Margin="15,149,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" Style="{DynamicResource TextBoxStyle1}"/>
+                    <Label Content="№4 Как по фамилии сержанта называется Сталинградский дом, который советские солдаты обороняли в течение нескольких месяцев?" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ot4" HorizontalAlignment="Left" Margin="15,203,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" Style="{DynamicResource TextBoxStyle1}"/>
+                    <Label Content="№5 Какой советский военачальник, кроме Сталина и Жукова, был дважды кавалером ордена «Победа»?" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ot5" HorizontalAlignment="Left" Margin="15,257,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" Style="{DynamicResource TextBoxStyle1}"/>
+                    <Label Content="№6 Кто имел звание Герой Советского Союза четырежды?" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="ot6" HorizontalAlignment="Left" Margin="15,311,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="120" Style="{DynamicResource TextBoxStyle1}"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Второй уровень">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-2,26">
+                    <TextBox HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Заполните пропуски в данных предложениях, используя приведённый ниже список пропущенных элементов: для каждого предложения, обозначенного буквой и содержащего пропуск, выберите номер нужного элемента. А)  62-я и 64-я армии под командованием генералов В. И. Чуйкова и М. С. Шумилова обороняли город ___________. Б)  Во время Сталинградской битвы штурмовая группа отбила у противника четырехэтажное здание  — жилой дом в центре города и удерживала его до ликвидации группировки немецко-фашистских войск в районе Сталинграда. Группой командовал __________.  Пропущенные элементы: &#xD;&#xA;1)  1941 г. &#xD;&#xA;2)  Я. Ф. Павлов &#xD;&#xA;3)  Сталинград&#xD;&#xA;4)  Севастополь &#xD;&#xA;5)  А. М. Матросов&#xD;&#xA;6)  1942 г.  "  IsReadOnly="True" VerticalAlignment="Top" Width="786" Height="187"/>
+                    <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="ot7" HorizontalAlignment="Left" Margin="10,213,0,0" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Top" Width="139" Height="30"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Третий уровень">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-2,26">
+                    <Label Content="№8 28 июля 1942 г. Сталин издал знаменитый Приказ № 227. О чём же говорилось в этом приказе?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <RadioButton Content="«Ни шагу назад!»" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                    <RadioButton Content="«Отстоим Волгу-матушку!»" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
+                    <RadioButton Content="«Смерть фашистским оккупантам!»" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top"/>
+                    <RadioButton Content="«Только вперёд, только на линию огня!»" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+        <ProgressBar x:Name="o" Margin="0,0,0,7" HorizontalAlignment="Center" Width="808" Height="15" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>
