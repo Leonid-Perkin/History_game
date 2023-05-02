@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Выбор события" Height="353" Width="817" ResizeMode="NoResize" Padding="0,0,0,-4" Icon="/2020-01-20-12-10-59.jpg">
+        Title="Выбор события" Height="353" Width="815" ResizeMode="NoResize" Padding="0,0,0,-4" Icon="/2020-01-20-12-10-59.jpg">
     <Grid>
         <Button  x:Name="st_b" Content="Сталинградская битва" Click="st_b_Click" Height="338" VerticalAlignment="Top" HorizontalAlignment="Left" Width="272" Foreground="White" BorderThickness="1,1,1,1" FontSize="18" Padding="1,250,1,1">
             <Button.Background>
@@ -22,5 +22,7 @@
                 <ImageBrush ImageSource="/ms_b.jpg" Opacity="1.5"/>
             </Button.Background>
         </Button>
+        <Label Content="Альфа" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="45" Width="95" FontSize="20"/>
+        <Label Content="Test" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top" Height="45" Width="95" FontSize="20"/>
     </Grid>
 </Window>

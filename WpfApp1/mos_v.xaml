@@ -105,7 +105,7 @@
                     <RadioButton x:Name="v6_rb1" Content="Федор фон Бок" HorizontalAlignment="Left" Margin="18,294,0,0" VerticalAlignment="Top" GroupName="v6" Checked="v6_rb1_Checked"/>
                     <RadioButton x:Name="v6_rb2" Content="Герд фон Рундштедт" HorizontalAlignment="Left" Margin="18,314,0,0" VerticalAlignment="Top" GroupName="v6" Checked="v6_rb2_Checked"/>
                     <RadioButton x:Name="v6_rb3" Content="Гюнтер фон Клюге" HorizontalAlignment="Left" Margin="18,334,0,0" VerticalAlignment="Top" GroupName="v6" Checked="v6_rb3_Checked"/>
-                    <Button x:Name="btn_p2" Content="Проверка" HorizontalAlignment="Left" Margin="176,329,0,0" VerticalAlignment="Top" Width="75" Click="btn_p2_Click"/>
+                    <Button x:Name="btn_p2" Style="{DynamicResource ButtonStyle1}" Content="Проверка" HorizontalAlignment="Left" Margin="176,329,0,0" VerticalAlignment="Top" Width="87" Click="btn_p2_Click" Height="29" Background="#FFBDBABA"/>
                     <Label x:Name="la2" Content="Вы прошли второй уровень !!!!" HorizontalAlignment="Left" Margin="472,115,0,0" VerticalAlignment="Top" Height="45" Width="348" FontSize="20" FontWeight="Bold" Visibility="Hidden"/>
                 </Grid>
             </TabItem>
