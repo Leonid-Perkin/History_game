@@ -14,6 +14,7 @@
     <None Remove="image001.jpg" />
     <None Remove="kr_b.png" />
     <None Remove="ms_b.jpg" />
+    <None Remove="qr_tg.jpg" />
     <None Remove="start.jpg" />
     <None Remove="st_b.jpg" />
     <None Remove="st_b_k_img.jpg" />
@@ -25,6 +26,7 @@
     <Resource Include="image001.jpg" />
     <Resource Include="kr_b.png" />
     <Resource Include="ms_b.jpg" />
+    <Resource Include="qr_tg.jpg" />
     <Resource Include="st_b.jpg" />
     <Resource Include="st_b_k_img.jpg" />
     <Resource Include="кб_карта1.jpg" />

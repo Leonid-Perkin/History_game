@@ -36,5 +36,11 @@ namespace WpfApp1
         {
             Close();
         }
+
+        private void About_the_author_Click(object sender, RoutedEventArgs e)
+        {
+            About popup = new About();
+            popup.ShowDialog();
+        }
     }
 }

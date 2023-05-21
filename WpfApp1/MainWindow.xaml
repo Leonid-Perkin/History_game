@@ -65,7 +65,8 @@
     </Window.Resources>
     <Grid>
         <Image Stretch="Fill" Source="/image001.jpg" />
-        <Button Style="{DynamicResource ButtonStyle1}" x:Name="start_b" Content="Старт" Margin="177,0,0,30" Height="47" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="128" Click="start_b_Click"/>
-        <Button x:Name="exit_b" Content="Выход" Margin="434,0,0,30" Height="47" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="128" Click="exit_b_Click" Style="{DynamicResource ButtonStyle1}"/>
+        <Button Style="{DynamicResource ButtonStyle1}" x:Name="start_b" Content="Старт" Margin="61,0,0,30" Height="47" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="128" Click="start_b_Click"/>
+        <Button x:Name="exit_b" Content="Выход" Margin="315,0,0,30" Height="47" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="128" Click="exit_b_Click" Style="{DynamicResource ButtonStyle1}"/>
+        <Button x:Name="About_the_author" Content="Об Авторе" Margin="620,0,0,30" Height="47" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="128" Style="{DynamicResource ButtonStyle1}" Click="About_the_author_Click"/>
     </Grid>
 </Window>
