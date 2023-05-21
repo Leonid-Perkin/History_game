@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="kr_b_k" Height="549" Width="997">
+        Title="Курская битва тест по карте" Height="549" Width="997" Icon="/kr_b.png">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">

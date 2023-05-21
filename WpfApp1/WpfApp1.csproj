@@ -10,6 +10,7 @@
   <ItemGroup>
     <None Remove="2020-01-20-12-10-59.jpg" />
     <None Remove="319572_original.jpg" />
+    <None Remove="cup_icon-icons.com_55322.png" />
     <None Remove="kr_b.png" />
     <None Remove="ms_b.jpg" />
     <None Remove="splash.jpg" />
@@ -21,6 +22,7 @@
   <ItemGroup>
     <Resource Include="2020-01-20-12-10-59.jpg" />
     <Resource Include="319572_original.jpg" />
+    <Resource Include="cup_icon-icons.com_55322.png" />
     <Resource Include="kr_b.png" />
     <Resource Include="ms_b.jpg" />
     <Resource Include="st_b.jpg" />
