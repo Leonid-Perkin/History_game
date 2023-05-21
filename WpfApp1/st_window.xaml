@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="st_window" Height="450" Width="800" Background="White">
+        Title="Сталинградская битва" Height="450" Width="800" Background="White" Icon="/st_b.jpg">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -65,8 +65,8 @@
     </Window.Resources>
     <Grid>
         <Image Source="/st_b.jpg" Stretch="Fill"/>
-        <Button Style="{DynamicResource ButtonStyle1}" x:Name="b1" Content="Викторина" HorizontalAlignment="Left" Margin="42,373,0,0" VerticalAlignment="Top" Height="42" Width="88" Click="b1_Click"/>
-        <Button x:Name="b2" Content="Работа с картой" HorizontalAlignment="Left" Margin="173,373,0,0" VerticalAlignment="Top" Height="42" Width="123" Click="b2_Click" Style="{DynamicResource ButtonStyle1}"/>
-        <Button x:Name="b2_Copy" Content="Назад" HorizontalAlignment="Left" Margin="320,373,0,0" VerticalAlignment="Top" Height="42" Width="123" Style="{DynamicResource ButtonStyle1}" Click="b2_Copy_Click"/>
+        <Button Style="{DynamicResource ButtonStyle1}" x:Name="b1" Content="Викторина" HorizontalAlignment="Left" Margin="42,0,0,19" VerticalAlignment="Bottom" Height="42" Width="88" Click="b1_Click"/>
+        <Button x:Name="b2" Content="Работа с картой" HorizontalAlignment="Left" Margin="173,0,0,19" VerticalAlignment="Bottom" Height="42" Width="123" Click="b2_Click" Style="{DynamicResource ButtonStyle1}"/>
+        <Button x:Name="b2_Copy" Content="Назад" HorizontalAlignment="Left" Margin="320,0,0,19" VerticalAlignment="Bottom" Height="42" Width="123" Style="{DynamicResource ButtonStyle1}" Click="b2_Copy_Click"/>
     </Grid>
 </Window>
