@@ -8,21 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".jpg" />
     <None Remove="2020-01-20-12-10-59.jpg" />
-    <None Remove="319572_original.jpg" />
     <None Remove="cup_icon-icons.com_55322.png" />
+    <None Remove="image001.jpg" />
     <None Remove="kr_b.png" />
     <None Remove="ms_b.jpg" />
-    <None Remove="splash.jpg" />
+    <None Remove="start.jpg" />
     <None Remove="st_b.jpg" />
     <None Remove="st_b_k_img.jpg" />
     <None Remove="кб_карта1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="2020-01-20-12-10-59.jpg" />
-    <Resource Include="319572_original.jpg" />
     <Resource Include="cup_icon-icons.com_55322.png" />
+    <Resource Include="image001.jpg" />
     <Resource Include="kr_b.png" />
     <Resource Include="ms_b.jpg" />
     <Resource Include="st_b.jpg" />
@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <SplashScreen Include="splash.jpg" />
+    <SplashScreen Include="start.jpg" />
   </ItemGroup>
 
 </Project>

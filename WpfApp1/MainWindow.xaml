@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Начало" Height="450" Width="800" ResizeMode="NoResize" Icon="/2020-01-20-12-10-59.jpg">
+        Title="Начало" Height="450" Width="800" ResizeMode="NoResize" Icon="/image001.jpg">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -64,7 +64,7 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Image Source="/2020-01-20-12-10-59.jpg" Stretch="Fill" />
+        <Image Stretch="Fill" Source="/image001.jpg" />
         <Button Style="{DynamicResource ButtonStyle1}" x:Name="start_b" Content="Старт" Margin="177,0,0,30" Height="47" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="128" Click="start_b_Click"/>
         <Button x:Name="exit_b" Content="Выход" Margin="434,0,0,30" Height="47" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="128" Click="exit_b_Click" Style="{DynamicResource ButtonStyle1}"/>
     </Grid>
