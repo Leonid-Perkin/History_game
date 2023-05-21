@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="kr_b_v" Height="450" Width="800">
+        Title="Викторина Курская Битва" Height="450" Width="800" Icon="/kr_b.png">
     <Window.Resources>
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
         <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
@@ -141,10 +141,10 @@
                     <RadioButton x:Name="v7_l2" Content="Около 5 млн." HorizontalAlignment="Left" Margin="23,192,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v7_l2_Checked"/>
                     <RadioButton x:Name="v8_l2" Content="Более 2 млн." HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top"  GroupName="v5" Checked="v8_l2_Checked"/>
                     <Label Content="6. Как назывались две советские наступательные операции в ходе Курской битвы?" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="v9_l2" Content="Румянцев и Багратион" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v9_l2_Checked"/>
-                    <RadioButton x:Name="v10_l2" Content="Кутузов и Румянцев" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v10_l2_Checked"/>
-                    <RadioButton x:Name="v11_l2" Content="Кутузов и Суворов" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v11_l2_Checked"/>
-                    <RadioButton x:Name="v12_l2" Content="Суворов и Ушаков" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v4" Checked="v12_l2_Checked"/>
+                    <RadioButton x:Name="v9_l2" Content="Румянцев и Багратион" HorizontalAlignment="Left" Margin="23,263,0,0" VerticalAlignment="Top"  GroupName="v6" Checked="v9_l2_Checked"/>
+                    <RadioButton x:Name="v10_l2" Content="Кутузов и Румянцев" HorizontalAlignment="Left" Margin="23,283,0,0" VerticalAlignment="Top"  GroupName="v6" Checked="v10_l2_Checked"/>
+                    <RadioButton x:Name="v11_l2" Content="Кутузов и Суворов" HorizontalAlignment="Left" Margin="23,303,0,0" VerticalAlignment="Top"  GroupName="v6" Checked="v11_l2_Checked"/>
+                    <RadioButton x:Name="v12_l2" Content="Суворов и Ушаков" HorizontalAlignment="Left" Margin="23,323,0,0" VerticalAlignment="Top"  GroupName="v6" Checked="v12_l2_Checked"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="Level3" Header="Третий уровень" IsEnabled="False">
@@ -206,6 +206,6 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom" Maximum="11"/>
+        <ProgressBar x:Name="p_b" Margin="10,0,10,10" Height="18" VerticalAlignment="Bottom" Maximum="14"/>
     </Grid>
 </Window>
