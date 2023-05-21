@@ -13,11 +13,11 @@
         </Grid.ColumnDefinitions>
         <Image Margin="0,0,432,0" Source="/st_b_k_img.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
         <TextBox Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,205,365" TextWrapping="Wrap" Text="Укажите название города, обозначенного на схеме цифрой «1»" IsReadOnly="True" VerticalAlignment="Bottom" Width="217" Height="40"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,28,365" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Bottom" Width="120" Height="38"/>
+        <TextBox x:Name="tb1" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,28,365" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Bottom" Width="120" Height="38" TextChanged="tb1_TextChanged"/>
         <TextBox Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,205,258" TextWrapping="Wrap" Text="Укажите  название города, обозначенного на схеме цифрой «2», в районе которого произошло соединение войск двух фронтов Красной армии" IsReadOnly="True" VerticalAlignment="Bottom" Width="217" Height="91"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,28,311" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Bottom" Width="120" Height="38"/>
+        <TextBox x:Name="tb2" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,28,311" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Bottom" Width="120" Height="38" TextChanged="TextBox_TextChanged"/>
         <TextBox Grid.Column="1" Margin="0,0,205,167" TextWrapping="Wrap" Text="Укажите название периода в ходе войны, начало которому положили события, обозначенные на схеме." IsReadOnly="True" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="217"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,28,179" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Bottom" Width="120" Height="38"/>
+        <TextBox x:Name="tb3" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,28,179" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Bottom" Width="120" Height="38" TextChanged="TextBox_TextChanged_1"/>
 
     </Grid>
 </Window>

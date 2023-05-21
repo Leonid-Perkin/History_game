@@ -23,5 +23,51 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        int o = 0;
+        private void ch_Winner()
+        {
+            if (o == 3)
+            {
+                Winner popup = new Winner();
+                popup.ShowDialog();
+            }
+        }
+        private void tb1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (tb1.Text == "Сталинград")
+            {
+                o++;
+                tb1.Background = Brushes.Green;
+                tb1.Foreground = Brushes.White;
+                tb1.IsEnabled = false;
+                ch_Winner();
+            }
+            
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (tb2.Text == "Калач-на-Дону"|| tb2.Text == "Калач на Дону")
+            {
+                o++;
+                tb2.Background = Brushes.Green;
+                tb2.Foreground = Brushes.White;
+                tb2.IsEnabled = false;
+                ch_Winner();
+            }
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+            if (tb3.Text == "коренной перелом")
+            {
+                o++;
+                tb3.Background = Brushes.Green;
+                tb3.Foreground = Brushes.White;
+                tb3.IsEnabled = false;
+                ch_Winner();
+            }
+        }
     }
 }
