@@ -22,7 +22,5 @@
                 <ImageBrush ImageSource="/ms_b.jpg" Opacity="1.5"/>
             </Button.Background>
         </Button>
-        <Label Content="Альфа" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="45" Width="95" FontSize="20"/>
-        <Label Content="Test" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top" Height="45" Width="95" FontSize="20"/>
     </Grid>
 </Window>
