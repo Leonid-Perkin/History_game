@@ -72,5 +72,18 @@ namespace WpfApp1
                 ch_Winner();
             }
         }
+        private void re_Click(object sender, RoutedEventArgs e)
+        {
+            st_window win2 = new st_window();
+            win2.Show();
+            Close();
+        }
+
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+            Event_Selection win2 = new Event_Selection();
+            win2.Show();
+            Close();
+        }
     }
 }
