@@ -18,6 +18,7 @@
         <TextBox x:Name="tb2" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,28,311" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Bottom" Width="120" Height="38" TextChanged="TextBox_TextChanged"/>
         <TextBox Grid.Column="1" Margin="0,0,205,167" TextWrapping="Wrap" Text="Укажите название периода в ходе войны, начало которому положили события, обозначенные на схеме." IsReadOnly="True" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="217"/>
         <TextBox x:Name="tb3" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,28,179" TextWrapping="Wrap" Text="Ответ" VerticalAlignment="Bottom" Width="120" Height="38" TextChanged="TextBox_TextChanged_1"/>
+        <ProgressBar x:Name="p_b" Grid.Column="1" Height="20" Margin="0,0,8,33" VerticalAlignment="Bottom" Width="412" Maximum="3" HorizontalAlignment="Right"/>
 
     </Grid>
 </Window>

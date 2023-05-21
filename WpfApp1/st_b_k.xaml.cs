@@ -38,6 +38,7 @@ namespace WpfApp1
             if (tb1.Text == "Сталинград")
             {
                 o++;
+                p_b.Value = o;
                 tb1.Background = Brushes.Green;
                 tb1.Foreground = Brushes.White;
                 tb1.IsEnabled = false;
@@ -51,6 +52,7 @@ namespace WpfApp1
             if (tb2.Text == "Калач-на-Дону"|| tb2.Text == "Калач на Дону")
             {
                 o++;
+                p_b.Value = o;
                 tb2.Background = Brushes.Green;
                 tb2.Foreground = Brushes.White;
                 tb2.IsEnabled = false;
@@ -63,6 +65,7 @@ namespace WpfApp1
             if (tb3.Text == "коренной перелом")
             {
                 o++;
+                p_b.Value = o;
                 tb3.Background = Brushes.Green;
                 tb3.Foreground = Brushes.White;
                 tb3.IsEnabled = false;
