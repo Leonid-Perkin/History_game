@@ -28,8 +28,17 @@ namespace WpfApp1
         private void v1_l1_Checked(object sender, RoutedEventArgs e)
         {
             v1_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
+        private void ch_Winner()
+        {
+            if (o == 14)
+            {
+                Winner popup = new Winner();
+                popup.ShowDialog();
+            }
+        }
         private void v2_l1_Checked(object sender, RoutedEventArgs e)
         {
             o++;
@@ -48,21 +57,25 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v3_l1_Checked(object sender, RoutedEventArgs e)
         {
             v3_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v4_l1_Checked(object sender, RoutedEventArgs e)
         {
             v4_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v5_l1_Checked(object sender, RoutedEventArgs e)
         {
             v5_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v6_l1_Checked(object sender, RoutedEventArgs e)
@@ -83,21 +96,25 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v7_l1_Checked(object sender, RoutedEventArgs e)
         {
             v7_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v8_l1_Checked(object sender, RoutedEventArgs e)
         {
             v8_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v9_l1_Checked(object sender, RoutedEventArgs e)
         {
             v9_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v10_l1_Checked(object sender, RoutedEventArgs e)
@@ -118,25 +135,30 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v11_l1_Checked(object sender, RoutedEventArgs e)
         {
             v11_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v12_l1_Checked(object sender, RoutedEventArgs e)
         {
             v12_l1.Foreground = Brushes.Red;
+            ch_Winner();
         }
         private void v1_l2_Checked(object sender, RoutedEventArgs e)
         {
             v1_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v2_l2_Checked(object sender, RoutedEventArgs e)
         {
             v2_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v3_l2_Checked(object sender, RoutedEventArgs e)
@@ -157,11 +179,13 @@ namespace WpfApp1
                 Level3.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v4_l2_Checked(object sender, RoutedEventArgs e)
         {
-            v4_l2.Foreground = Brushes.Red;    
+            v4_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v5_l2_Checked(object sender, RoutedEventArgs e)
@@ -182,21 +206,25 @@ namespace WpfApp1
                 Level3.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v6_l2_Checked(object sender, RoutedEventArgs e)
         {
             v6_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v7_l2_Checked(object sender, RoutedEventArgs e)
         {
             v7_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v8_l2_Checked(object sender, RoutedEventArgs e)
         {
             v8_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v10_l2_Checked(object sender, RoutedEventArgs e)
@@ -217,31 +245,37 @@ namespace WpfApp1
                 Level3.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v9_l2_Checked(object sender, RoutedEventArgs e)
         {
             v9_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v11_l2_Checked(object sender, RoutedEventArgs e)
         {
             v11_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v12_l2_Checked(object sender, RoutedEventArgs e)
         {
             v12_l2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v1_l3_Checked(object sender, RoutedEventArgs e)
         {
             v1_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v2_l3_Checked(object sender, RoutedEventArgs e)
         {
             v2_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v3_l3_Checked(object sender, RoutedEventArgs e)
@@ -262,17 +296,20 @@ namespace WpfApp1
                 Level4.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
 
         }
 
         private void v4_l3_Checked(object sender, RoutedEventArgs e)
         {
             v4_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v5_l3_Checked(object sender, RoutedEventArgs e)
         {
             v5_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v6_l3_Checked(object sender, RoutedEventArgs e)
@@ -293,21 +330,25 @@ namespace WpfApp1
                 Level4.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v7_l3_Checked(object sender, RoutedEventArgs e)
         {
             v7_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v8_l3_Checked(object sender, RoutedEventArgs e)
         {
             v8_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v9_l3_Checked(object sender, RoutedEventArgs e)
         {
             v9_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v10_l3_Checked(object sender, RoutedEventArgs e)
@@ -328,26 +369,31 @@ namespace WpfApp1
                 Level4.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v11_l3_Checked(object sender, RoutedEventArgs e)
         {
             v11_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v12_l3_Checked(object sender, RoutedEventArgs e)
         {
             v12_l3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v1_l4_Checked(object sender, RoutedEventArgs e)
         {
             v1_l4.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v2_l4_Checked(object sender, RoutedEventArgs e)
         {
             v2_l4.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v3_l4_Checked(object sender, RoutedEventArgs e)
@@ -369,16 +415,19 @@ namespace WpfApp1
                 Level5.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v4_l4_Checked(object sender, RoutedEventArgs e)
         {
             v4_l4.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v5_l4_Checked(object sender, RoutedEventArgs e)
         {
             v5_l4.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v6_l4_Checked(object sender, RoutedEventArgs e)
@@ -399,16 +448,19 @@ namespace WpfApp1
                 Level5.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v7_l4_Checked(object sender, RoutedEventArgs e)
         {
             v7_l4.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v8_l4_Checked(object sender, RoutedEventArgs e)
         {
             v8_l4.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v1_l5_Checked(object sender, RoutedEventArgs e)
@@ -429,22 +481,26 @@ namespace WpfApp1
                 Level5.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
 
         }
 
         private void v2_l5_Checked(object sender, RoutedEventArgs e)
         {
             v2_l5.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v3_l5_Checked(object sender, RoutedEventArgs e)
         {
             v3_l5.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v4_l5_Checked(object sender, RoutedEventArgs e)
         {
             v4_l5.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v5_l5_Checked(object sender, RoutedEventArgs e)
@@ -465,21 +521,25 @@ namespace WpfApp1
                 Level5.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void v6_l5_Checked(object sender, RoutedEventArgs e)
         {
             v6_l5.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v7_l5_Checked(object sender, RoutedEventArgs e)
         {
             v7_l5.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void v8_l5_Checked(object sender, RoutedEventArgs e)
         {
             v8_l5.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void tb1_TextChanged(object sender, TextChangedEventArgs e)
@@ -498,6 +558,7 @@ namespace WpfApp1
                 }
 
             }
+            ch_Winner();
         }
 
         private void re_Click(object sender, RoutedEventArgs e)
