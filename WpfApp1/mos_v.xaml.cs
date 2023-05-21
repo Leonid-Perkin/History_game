@@ -41,7 +41,14 @@ namespace WpfApp1
             win2.Show();
             Close();
         }
-
+        private void ch_Winner()
+        {
+            if (o == 11)
+            {
+                Winner popup = new Winner();
+                popup.ShowDialog();
+            }
+        }
         private void P_ot1_Checked(object sender, RoutedEventArgs e)
         {
             o++;
@@ -58,21 +65,25 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void n_ot1_Checked(object sender, RoutedEventArgs e)
         {
             n_ot1.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void n_ot2_Checked(object sender, RoutedEventArgs e)
         {
             n_ot2.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void n_ot3_Checked(object sender, RoutedEventArgs e)
         {
             n_ot3.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void P_ot2_Checked(object sender, RoutedEventArgs e)
@@ -91,11 +102,13 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
         int v_ch = 0;
         private void n_ot4_Checked(object sender, RoutedEventArgs e)
         {
             n_ot4.Foreground = Brushes.Red;
+            ch_Winner();
         }
 
         private void c_b_p1_Checked(object sender, RoutedEventArgs e)
@@ -120,6 +133,7 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void c_b_p2_Checked(object sender, RoutedEventArgs e)
@@ -144,6 +158,7 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void c_b_p3_Checked(object sender, RoutedEventArgs e)
@@ -168,6 +183,7 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void c_b_p4_Checked(object sender, RoutedEventArgs e)
@@ -192,6 +208,7 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void c_b_p5_Checked(object sender, RoutedEventArgs e)
@@ -216,6 +233,7 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
         }
 
         private void c_b_n1_Checked(object sender, RoutedEventArgs e)
@@ -237,6 +255,111 @@ namespace WpfApp1
                 Level2.IsEnabled = true;
                 v = 0;
             }
+            ch_Winner();
+        }
+
+        private void v3_rb1_Checked(object sender, RoutedEventArgs e)
+        {
+            v3_rb1.Foreground = Brushes.Red;
+            ch_Winner();
+        }
+
+        private void v3_rb2_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            p_b.Value = o;
+            v++;
+            v3_rb2.Foreground = Brushes.Green;
+            v3_rb1.Foreground = Brushes.Red;
+            v3_rb1.IsEnabled = false;
+            v3_rb2.IsEnabled = false;
+            ch_Winner();
+        }
+
+        private void v4_rb1_Checked(object sender, RoutedEventArgs e)
+        {
+            v4_rb1.Foreground = Brushes.Red;
+            ch_Winner();
+        }
+
+        private void v4_rb2_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            p_b.Value = o;
+            v++;
+            v4_rb2.Foreground = Brushes.Green;
+            v4_rb1.Foreground = Brushes.Red;
+            v4_rb3.Foreground = Brushes.Red;
+            v4_rb4.Foreground = Brushes.Red;
+            v4_rb1.IsEnabled = false;
+            v4_rb2.IsEnabled = false;
+            v4_rb3.IsEnabled = false;
+            v4_rb4.IsEnabled = false;
+            ch_Winner();
+        }
+
+        private void v4_rb3_Checked(object sender, RoutedEventArgs e)
+        {
+            v4_rb3.Foreground = Brushes.Red;
+            ch_Winner();
+        }
+
+        private void v4_rb4_Checked(object sender, RoutedEventArgs e)
+        {
+            v4_rb4.Foreground = Brushes.Red;
+            ch_Winner();
+        }
+
+        private void v5_rb1_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            p_b.Value = o;
+            v++;
+            v5_rb1.Foreground = Brushes.Green;
+            v5_rb2.Foreground = Brushes.Red;
+            v5_rb3.Foreground = Brushes.Red;
+            v5_rb1.IsEnabled = false;
+            v5_rb2.IsEnabled = false;
+            v5_rb3.IsEnabled = false;
+            ch_Winner();
+        }
+
+        private void v5_rb2_Checked(object sender, RoutedEventArgs e)
+        {
+            v5_rb2.Foreground = Brushes.Red;
+            ch_Winner();
+        }
+
+        private void v5_rb3_Checked(object sender, RoutedEventArgs e)
+        {
+            v5_rb3.Foreground = Brushes.Red;
+            ch_Winner();
+        }
+
+        private void v6_rb1_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            p_b.Value = o;
+            v++;
+            v6_rb1.Foreground = Brushes.Green;
+            v6_rb2.Foreground = Brushes.Red;
+            v6_rb3.Foreground = Brushes.Red;
+            v6_rb1.IsEnabled = false;
+            v6_rb2.IsEnabled = false;
+            v6_rb3.IsEnabled = false;
+            ch_Winner();
+        }
+
+        private void v6_rb2_Checked(object sender, RoutedEventArgs e)
+        {
+            v6_rb2.Foreground = Brushes.Red;
+            ch_Winner();
+        }
+
+        private void v6_rb3_Checked(object sender, RoutedEventArgs e)
+        {
+            v6_rb3.Foreground = Brushes.Red;
+            ch_Winner();
         }
     }
 }
