@@ -66,7 +66,7 @@
     <Grid>
         <Image Source="/ms_b.jpg" Stretch="Fill"/>
         <Button Style="{DynamicResource ButtonStyle1}" x:Name="vi_btn" Content="Викторина" HorizontalAlignment="Left" Margin="43,339,0,0" VerticalAlignment="Top" Height="59" Width="132" Click="vi_btn_Click" Background="#FFDDDDDD"/>
-        <Button x:Name="k_btn" Content="Вопросы по карте" HorizontalAlignment="Left" Margin="211,339,0,0" VerticalAlignment="Top" Height="59" Width="132" Style="{DynamicResource ButtonStyle1}"/>
+        <Button x:Name="k_btn" Content="Вопросы по карте" HorizontalAlignment="Left" Margin="211,339,0,0" VerticalAlignment="Top" Height="59" Width="132" Style="{DynamicResource ButtonStyle1}" IsEnabled="False"/>
         <Button x:Name="k_btn2" Content="Назад" HorizontalAlignment="Left" Margin="380,339,0,0" VerticalAlignment="Top" Height="59" Width="132" Style="{DynamicResource ButtonStyle1}" Click="k_btn2_Click"/>
 
     </Grid>
