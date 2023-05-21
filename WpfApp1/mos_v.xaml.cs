@@ -25,197 +25,8 @@ namespace WpfApp1
             InitializeComponent();
 
         }
-        int k = 0;
-        bool p1 = false;
-        bool p2 = false;
-        private void P_ot1_Checked(object sender, RoutedEventArgs e)
-        {
-            k++;
-            p_b.Value = k;
-            P_ot1.Foreground = Brushes.Green;
-            P_ot1.IsEnabled= false;
-            n_ot1.IsEnabled= false;
-            n_ot2.IsEnabled= false;
-            p1 = true;
-        }
-
-        private void P_ot2_Checked(object sender, RoutedEventArgs e)
-        {
-            k++;
-            p_b.Value = k;
-            P_ot2.Foreground = Brushes.Green;
-            P_ot2.IsEnabled = false;
-            n_ot3.IsEnabled = false;
-            n_ot4.IsEnabled = false;
-            p1 = true;
-        }
-
-        private void n_ot1_Checked(object sender, RoutedEventArgs e)
-        {
-            n_ot1.Foreground = Brushes.Red;
-            p1 = false;
-        }
-
-        private void n_ot2_Checked(object sender, RoutedEventArgs e)
-        {
-            n_ot2.Foreground = Brushes.Red;
-            p1 = false;
-        }
-
-        private void n_ot3_Checked(object sender, RoutedEventArgs e)
-        {
-            n_ot3.Foreground = Brushes.Red;
-            p1 = false;
-        }
-
-        private void n_ot4_Checked(object sender, RoutedEventArgs e)
-        {
-            n_ot4.Foreground = Brushes.Red;
-            p1 = false;
-        }
-
-        private void Button_Click_btn_p1(object sender, RoutedEventArgs e)
-        {
-            if (c_b_p1.IsChecked == true && c_b_p2.IsChecked == true && c_b_p3.IsChecked == true && c_b_p3.IsChecked == true && c_b_p4.IsChecked == true && c_b_p5.IsChecked == true && c_b_n1.IsChecked == false)
-            {
-                c_b_p1.IsEnabled = false;
-                c_b_p2.IsEnabled = false;
-                c_b_p3.IsEnabled = false;
-                c_b_p4.IsEnabled = false;
-                c_b_p5.IsEnabled = false;
-                c_b_n1.IsEnabled = false;
-                btn_p1.IsEnabled = false;
-                c_b_p1.Foreground = Brushes.Green;
-                c_b_p2.Foreground = Brushes.Green;
-                c_b_p3.Foreground = Brushes.Green;
-                c_b_p4.Foreground = Brushes.Green;
-                c_b_p5.Foreground = Brushes.Green;
-                c_b_n1.Foreground = Brushes.Red;
-                k = k + 3;
-                p_b.Value = k;
-                p1 = true;
-            }
-            else
-            {
-                p1 = false;
-                c_b_p1.IsChecked = false;
-                c_b_p2.IsChecked = false;
-                c_b_p3.IsChecked = false;
-                c_b_p4.IsChecked = false;
-                c_b_p5.IsChecked = false;
-                c_b_n1.IsChecked = false;
-            }
-        if (p1 == true)
-            {
-                la1.Visibility= Visibility.Visible;
-                Level2.IsEnabled= true;
-                p1= false;
-            }
-
-        }
-
-        private void v3_rb1_Checked(object sender, RoutedEventArgs e)
-        {
-            v3_rb1.Foreground = Brushes.Red;
-            p2 = false;
-        }
-
-        private void v3_rb2_Checked(object sender, RoutedEventArgs e)
-        {
-            v3_rb2.Foreground = Brushes.Green;
-            v3_rb1.IsEnabled = false;
-            v3_rb2.IsEnabled= false;
-            p2 = true;
-            k++;
-            p_b.Value = k;
-        }
-
-        private void v4_rb1_Checked(object sender, RoutedEventArgs e)
-        {
-            v4_rb1.Foreground = Brushes.Red;
-            p2 = false;
-        }
-
-        private void v4_rb2_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = true;
-            v4_rb2.Foreground= Brushes.Green;
-            v4_rb1.IsEnabled = false;
-            v4_rb2.IsEnabled= false;
-            v4_rb3.IsEnabled = false;
-            v4_rb4.IsEnabled = false;
-            k++;
-            p_b.Value = k;
-
-        }
-
-        private void v4_rb3_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = false;
-            v4_rb3.Foreground = Brushes.Red;
-        }
-
-        private void v4_rb4_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = false;
-            v4_rb4.Foreground = Brushes.Red;
-        }
-
-        private void v5_rb1_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = true;
-            k++;
-            p_b.Value = k;
-            v5_rb1.Foreground = Brushes.Green;
-            v5_rb1.IsEnabled = false;
-            v5_rb2.IsEnabled = false;
-            v5_rb3.IsEnabled = false;
-        }
-
-        private void v5_rb2_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = false;
-            v5_rb2.Foreground = Brushes.Red;
-        }
-
-        private void v5_rb3_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = false;
-            v5_rb3.Foreground = Brushes.Red;
-        }
-
-        private void v6_rb1_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = true;
-            k++;
-            p_b.Value = k;
-            v6_rb1.Foreground = Brushes.Green;
-            v6_rb1.IsEnabled = false;
-            v6_rb2.IsEnabled = false;
-            v6_rb3.IsEnabled = false;
-        }
-
-        private void v6_rb2_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = false;
-            v6_rb2.Foreground = Brushes.Red;
-        }
-
-        private void v6_rb3_Checked(object sender, RoutedEventArgs e)
-        {
-            p2 = false;
-            v6_rb3.Foreground = Brushes.Red;
-        }
-
-        private void btn_p2_Click(object sender, RoutedEventArgs e)
-        {
-            if (p2 == true)
-            {
-                la2.Visibility = Visibility.Visible;
-                Level3.IsEnabled = true;
-                p2 = false;
-            }
-        }
+        int o = 0;
+        int v = 0;
 
         private void re_Click(object sender, RoutedEventArgs e)
         {
@@ -229,6 +40,203 @@ namespace WpfApp1
             Event_Selection win2 = new Event_Selection();
             win2.Show();
             Close();
+        }
+
+        private void P_ot1_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            p_b.Value = o;
+            v++;
+            P_ot1.Foreground = Brushes.Green;
+            n_ot1.Foreground = Brushes.Red;
+            n_ot2.Foreground = Brushes.Red;
+            n_ot1.IsEnabled = false;
+            n_ot2.IsEnabled = false;
+            P_ot1.IsEnabled = false;
+            if (v == 3)
+            {
+                Level2.IsEnabled = true;
+                v = 0;
+            }
+        }
+
+        private void n_ot1_Checked(object sender, RoutedEventArgs e)
+        {
+            n_ot1.Foreground = Brushes.Red;
+        }
+
+        private void n_ot2_Checked(object sender, RoutedEventArgs e)
+        {
+            n_ot2.Foreground = Brushes.Red;
+        }
+
+        private void n_ot3_Checked(object sender, RoutedEventArgs e)
+        {
+            n_ot3.Foreground = Brushes.Red;
+        }
+
+        private void P_ot2_Checked(object sender, RoutedEventArgs e)
+        {
+            o++;
+            p_b.Value = o;
+            v++;
+            P_ot2.Foreground = Brushes.Green;
+            n_ot3.Foreground = Brushes.Red;
+            n_ot4.Foreground = Brushes.Red;
+            n_ot3.IsEnabled = false;
+            n_ot4.IsEnabled = false;
+            P_ot2.IsEnabled = false;
+            if (v == 3)
+            {
+                Level2.IsEnabled = true;
+                v = 0;
+            }
+        }
+        int v_ch = 0;
+        private void n_ot4_Checked(object sender, RoutedEventArgs e)
+        {
+            n_ot4.Foreground = Brushes.Red;
+        }
+
+        private void c_b_p1_Checked(object sender, RoutedEventArgs e)
+        {
+            c_b_p1.Foreground = Brushes.Green;
+            v_ch++;
+            o++;
+            p_b.Value = o;
+            if (v_ch == 5)
+            {
+                c_b_p1.IsEnabled = false;
+                c_b_p2.IsEnabled = false;
+                c_b_p3.IsEnabled = false;
+                c_b_p4.IsEnabled = false;
+                c_b_p5.IsEnabled = false;
+                c_b_n1.IsEnabled = false;
+                c_b_n1.Foreground = Brushes.Red;
+                v++;
+            }
+            if (v == 3)
+            {
+                Level2.IsEnabled = true;
+                v = 0;
+            }
+        }
+
+        private void c_b_p2_Checked(object sender, RoutedEventArgs e)
+        {
+            c_b_p2.Foreground = Brushes.Green;
+            v_ch++;
+            o++;
+            p_b.Value = o;
+            if (v_ch == 5)
+            {
+                c_b_p1.IsEnabled = false;
+                c_b_p2.IsEnabled = false;
+                c_b_p3.IsEnabled = false;
+                c_b_p4.IsEnabled = false;
+                c_b_p5.IsEnabled = false;
+                c_b_n1.IsEnabled = false;
+                c_b_n1.Foreground = Brushes.Red;
+                v++;
+            }
+            if (v == 3)
+            {
+                Level2.IsEnabled = true;
+                v = 0;
+            }
+        }
+
+        private void c_b_p3_Checked(object sender, RoutedEventArgs e)
+        {
+            c_b_p3.Foreground = Brushes.Green;
+            v_ch++;
+            o++;
+            p_b.Value = o;
+            if (v_ch == 5)
+            {
+                c_b_p1.IsEnabled = false;
+                c_b_p2.IsEnabled = false;
+                c_b_p3.IsEnabled = false;
+                c_b_p4.IsEnabled = false;
+                c_b_p5.IsEnabled = false;
+                c_b_n1.IsEnabled = false;
+                c_b_n1.Foreground = Brushes.Red;
+                v++;
+            }
+            if (v == 3)
+            {
+                Level2.IsEnabled = true;
+                v = 0;
+            }
+        }
+
+        private void c_b_p4_Checked(object sender, RoutedEventArgs e)
+        {
+            c_b_p4.Foreground = Brushes.Green;
+            v_ch++;
+            o++;
+            p_b.Value = o;
+            if (v_ch == 5)
+            {
+                c_b_p1.IsEnabled = false;
+                c_b_p2.IsEnabled = false;
+                c_b_p3.IsEnabled = false;
+                c_b_p4.IsEnabled = false;
+                c_b_p5.IsEnabled = false;
+                c_b_n1.IsEnabled = false;
+                c_b_n1.Foreground = Brushes.Red;
+                v++;
+            }
+            if (v == 3)
+            {
+                Level2.IsEnabled = true;
+                v = 0;
+            }
+        }
+
+        private void c_b_p5_Checked(object sender, RoutedEventArgs e)
+        {
+            c_b_p5.Foreground = Brushes.Green;
+            v_ch++;
+            o++;
+            p_b.Value = o;
+            if (v_ch == 5)
+            {
+                c_b_p1.IsEnabled = false;
+                c_b_p2.IsEnabled = false;
+                c_b_p3.IsEnabled = false;
+                c_b_p4.IsEnabled = false;
+                c_b_p5.IsEnabled = false;
+                c_b_n1.IsEnabled = false;
+                c_b_n1.Foreground = Brushes.Red;
+                v++;
+            }
+            if (v == 3)
+            {
+                Level2.IsEnabled = true;
+                v = 0;
+            }
+        }
+
+        private void c_b_n1_Checked(object sender, RoutedEventArgs e)
+        {
+            c_b_n1.Foreground = Brushes.Red;
+            if (v_ch == 5)
+            {
+                c_b_p1.IsEnabled = false;
+                c_b_p2.IsEnabled = false;
+                c_b_p3.IsEnabled = false;
+                c_b_p4.IsEnabled = false;
+                c_b_p5.IsEnabled = false;
+                c_b_n1.IsEnabled = false;
+                c_b_n1.Foreground = Brushes.Red;
+                v++;
+            }
+            if (v == 3)
+            {
+                Level2.IsEnabled = true;
+                v = 0;
+            }
         }
     }
 }
